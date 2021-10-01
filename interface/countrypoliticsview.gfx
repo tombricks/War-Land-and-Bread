@@ -46,6 +46,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_ideology_Islamic_Marxism_subtype"
+		texturefile = "gfx/interface/ideologies/Islamic_Marxism_subtype.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_unknown"
 		texturefile = "gfx/interface/ideologies/unknown.dds"
 		legacy_lazy_load = no

@@ -155,61 +155,69 @@
  ENG_Hypersocialism_ADJ: "British"
 
  SPA: "Spanish Federal People's Republic"
- SPA_DEF: "the Spanish Federal People's Republic"
+ SPA_DEF: "The Spanish Federal People's Republic"
  SPA_ADJ: "Spanish"
 
  BAS: "Basque Federal People's Republic"
- BAS_DEF: "the Basque Federal People's Republic"
+ BAS_DEF: "The Basque Federal People's Republic"
  BAS_ADJ: "Basque"
 
  CAT: "Catalan Federal People's Republic"
- CAT_DEF: "the Catalan Federal People's Republic"
+ CAT_DEF: "The Catalan Federal People's Republic"
  CAT_ADJ: "Catalan"
 
  POR: "Portuguese Federal People's Republic"
- POR_DEF: "the Portuguese Federal People's Republic"
+ POR_DEF: "The Portuguese Federal People's Republic"
  POR_ADJ: "Portuguese"
 
  SWE: "Swedish Socialist People's Republic"
- SWE_DEF: "the Swedish Socialist People's Republic"
+ SWE_DEF: "The Swedish Socialist People's Republic"
  SWE_ADJ: "Swedish"
 
  DEN: "Danish Republic"
- DEN_DEF: "the Danish Republic"
+ DEN_DEF: "The Danish Republic"
  DEN_ADJ: "Danish"
 
  NOR: "Norwegian Socialist Republic"
- NOR_DEF: "the Norwegian Socialist Republic"
+ NOR_DEF: "The Norwegian Socialist Republic"
  NOR_ADJ: "Norwegian"
 
  CHI: "People's Republic of China"
- CHI_DEF: "the People's Republic of China"
+ CHI_DEF: "The People's Republic of China"
  CHI_ADJ: "Chinese"
 
  MON: "Mongolian People's Republic"
- MON_DEF: "the Mongolian People's Republic"
+ MON_DEF: "The Mongolian People's Republic"
  MON_ADJ: "Mongolian"
 
  KOR: "People's Republic of Korea"
- KOR_DEF: "the People's Republic of Korea"
+ KOR_DEF: "The People's Republic of Korea"
  KOR_ADJ: "Korean"
 
  UAR: "Union of Arab Republics"
- UAR_DEF: "the Union of Arab Republics"
+ UAR_DEF: "The Union of Arab Republics"
  UAR_ADJ: "Arab"
 
  LBA: "Arab Islamic Republic"
- LBA_DEF: "the Arab Islamic Republic"
+ LBA_DEF: "The Arab Islamic Republic"
  LBA_ADJ: "Libyan"
 
  USA: "United Socialist States of North America"
- USA_DEF: "the United Socialist States of North America"
+ USA_DEF: "The United Socialist States of North America"
  USA_ADJ: "American"
 
  ICE: "Confederation of Iceland"
- ICE_DEF: "the Confederation of Iceland"
+ ICE_DEF: "The Confederation of Iceland"
  ICE_ADJ: "Icelandic"
 
  SYE: "People's Democratic Republic of Yemen"
- SYE_DEF: "the People's Democratic Republic of Yemen"
+ SYE_DEF: "The People's Democratic Republic of Yemen"
  SYE_ADJ: "South Yemeni"
+
+ ISI: "Islamic People's State"
+ ISI_DEF: "The Islamic People's State"
+ ISI_ADJ: "Islamic People's"
+
+ TUR: "Turkish Democratic Republic"
+ TUR_DEF: "The Turkish Democratic Republic"
+ TUR_ADJ: "Turkish"

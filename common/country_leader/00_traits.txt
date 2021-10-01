@@ -11,6 +11,7 @@ leader_traits = {
 	SUBIDEOLOGY_Marxism_Leninism_Hoxhaism = {  }
 	SUBIDEOLOGY_Market_Socialism = {  }
 	SUBIDEOLOGY_Anti_Capitalism = {  }
+	SUBIDEOLOGY_Islamic_Marxism = {  }
 
 	SUBIDEOLOGY_Hypersocialism = {  }
 	SUBIDEOLOGY_Marxism_Leninism = {  }

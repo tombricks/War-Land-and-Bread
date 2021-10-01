@@ -210,3 +210,11 @@ SYE = {
 	color = rgb { 204 90 62 }
 	color_ui = rgb { 204 90 62 }
 }
+ISI = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+TUR = {
+	color = rgb { 199 74 71 }
+	color_ui = rgb { 199 74 71 }
+}

@@ -86,6 +86,7 @@ add_to_faction = ENG
 add_to_faction = SPA
 add_to_faction = MON
 add_to_faction = USA
+add_to_faction = TUR
 
 add_to_array = { Global.CW_Sphere_Leaders = RUS }
 add_to_array = { CW_Sphere = RUS }
@@ -106,3 +107,4 @@ add_to_array = { CW_Sphere = ENG }
 add_to_array = { CW_Sphere = SPA }
 add_to_array = { CW_Sphere = MON }
 add_to_array = { CW_Sphere = USA }
+add_to_array = { CW_Sphere = TUR }

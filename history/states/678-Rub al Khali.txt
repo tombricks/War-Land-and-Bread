@@ -10,7 +10,8 @@ state = {
 	}
 
 	history = {
-		owner = ZZZ
+		owner = ISI
+		add_core_of = ISI
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
