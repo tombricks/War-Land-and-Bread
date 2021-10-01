@@ -1,0 +1,26 @@
+state = {
+	id = 326
+	name = "STATE_326"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 10062 3 }
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 10062 }
+
+	manpower = 10062
+	buildings_max_level_factor = 1.000
+}

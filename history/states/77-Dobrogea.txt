@@ -1,0 +1,27 @@
+state = {
+	id = 77
+	name = "STATE_77"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 11597 1 }
+		owner = ROM
+		add_core_of = ROM
+		add_core_of = BUL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 9614 11597 }
+
+	manpower = 11597
+	buildings_max_level_factor = 1.000
+}

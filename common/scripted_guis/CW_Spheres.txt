@@ -1,0 +1,34 @@
+scripted_gui = {
+	CW_Spheres = {
+		context_type = player_context
+		window_name = "CW_Spheres_window"
+		
+		visible = {
+			always = no
+		}
+
+		properties = {
+			Leader_Flag = {
+				image = "[?v.GetFlag]"
+			}
+		}
+
+		triggers = {
+		}
+
+		effects = {
+		}
+
+		dynamic_lists = {
+			spheres_grid = {
+				array = Global.CW_Sphere_Leaders
+				entry_container = CW_Spheres_Entry
+				change_scope = yes
+			}
+			spheres_list = {
+				array = CW_Sphere
+				entry_container = CW_Spheres_List_Entry
+			}
+		}
+	}
+}

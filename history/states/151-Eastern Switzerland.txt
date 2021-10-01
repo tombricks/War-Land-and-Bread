@@ -1,0 +1,26 @@
+state = {
+    id = 151
+    name = "STATE_151"
+    state_category = town
+    
+    resources = {
+        steel = 1
+        oil = 1
+        aluminium = 1
+    }
+
+    history = {
+        victory_points = { 663 10 }
+		owner = SWI
+		add_core_of = SWI
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+        }
+    }
+
+    provinces = { 658 661 663 3641 3660 3662 9600 11601 11623 }
+
+    manpower = 11623
+    buildings_max_level_factor = 1.000
+}

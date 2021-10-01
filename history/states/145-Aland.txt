@@ -1,0 +1,25 @@
+state = {
+    id = 145
+    name = "STATE_145"
+    state_category = town
+    
+    resources = {
+        steel = 1
+        oil = 1
+        aluminium = 1
+    }
+
+    history = {
+        owner = FIN
+		add_core_of = FIN
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+        }
+    }
+
+    provinces = { 9228 }
+
+    manpower = 9228
+    buildings_max_level_factor = 1.000
+}

@@ -1,0 +1,26 @@
+state = {
+	id = 450
+	name = "STATE_450"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 11954 3 }
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 1127 4120 10123 11954 }
+
+	manpower = 11954
+	buildings_max_level_factor = 1.000
+}

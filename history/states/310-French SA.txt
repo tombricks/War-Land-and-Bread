@@ -1,0 +1,25 @@
+state = {
+	id = 310
+	name = "STATE_310"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 12885 1 }
+		owner = ZZZ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 4934 12885 }
+
+	manpower = 12885
+	buildings_max_level_factor = 1.000
+}

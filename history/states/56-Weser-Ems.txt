@@ -1,0 +1,28 @@
+state = {
+	id = 56
+	name = "STATE_56"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 241 5 }
+        victory_points = { 11360 1 }
+        victory_points = { 11388 5 }
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 241 247 309 336 3234 9281 11233 11264 11360 11388 }
+
+	manpower = 11388
+	buildings_max_level_factor = 1.000
+}

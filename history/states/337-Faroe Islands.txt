@@ -1,0 +1,25 @@
+state = {
+	id = 337
+	name = "STATE_337"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+		owner = DEN
+		add_core_of = DEN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 13003 }
+
+	manpower = 13003
+	buildings_max_level_factor = 1.000
+}

@@ -1,0 +1,26 @@
+state = {
+    id = 117
+    name = "STATE_117"
+    state_category = town
+    
+    resources = {
+        steel = 1
+        oil = 1
+        aluminium = 1
+    }
+
+    history = {
+        victory_points = { 819 20 }
+        owner = ITA
+		add_core_of = ITA
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+        }
+    }
+
+    provinces = { 819 851 883 955 3958 3968 6843 6939 6972 6980 9826 11803 }
+
+    manpower = 11803
+    buildings_max_level_factor = 1.000
+}

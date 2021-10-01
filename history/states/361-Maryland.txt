@@ -1,0 +1,27 @@
+state = {
+	id = 361
+	name = "STATE_361"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 3957 40 }
+        victory_points = { 6984 5 }
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 3957 6823 6892 6929 6984 9758 9786 11892 }
+
+	manpower = 11892
+	buildings_max_level_factor = 1.000
+}

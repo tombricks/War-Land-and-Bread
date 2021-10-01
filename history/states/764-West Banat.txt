@@ -1,0 +1,26 @@
+state = {
+	id = 764
+	name = "STATE_764"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 3614 1 }
+		owner = YUG
+		add_core_of = YUG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 614 3614 6643 11787 }
+
+	manpower = 11787
+	buildings_max_level_factor = 1.000
+}

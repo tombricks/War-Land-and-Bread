@@ -1,0 +1,44 @@
+guiTypes = {
+	containerWindowType = {
+		name = "Politics_Scripted_GUI_window"
+		position = { x = 0 y = 0}
+
+		instantTextboxType = {
+			name = "subideology"
+			position = { x = 90 y = 312 }
+			font = "hoi_18mbs"
+			text = "[GetIdeologyADJ]"
+			maxWidth = 162
+			maxHeight = 32
+			format = center
+		}
+
+		iconType ={
+			name = "ideology_icon"
+			spriteType = "GFX_ideology_unknown"
+			position = { x= 19 y = 305 }
+			Orientation = "UPPER_LEFT"
+		}
+
+	}
+	containerWindowType = {
+		name = "Diplomatic_Scripted_GUI_window"
+		position = { x = 0 y = 0}
+
+		instantTextboxType = {
+			name = "subideology"
+			position = { x = 263 y = 145 }
+			font = "hoi_16mbs"
+			text = "[GetIdeologyADJ] ([GetFullIdeologyADJ])"
+			maxWidth = 245
+			maxHeight = 20
+		}		
+			
+		iconType ={
+			name = "ideology_icon"
+			spriteType = "GFX_ideology_unknown"
+			position = { x = 158 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
+}

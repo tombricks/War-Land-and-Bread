@@ -1,0 +1,26 @@
+state = {
+    id = 99
+    name = "STATE_99"
+    state_category = town
+    
+    resources = {
+        steel = 1
+        oil = 1
+        aluminium = 1
+    }
+
+    history = {
+		victory_points = { 6364 3  }
+        owner = DEN
+		add_core_of = DEN
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+        }
+    }
+
+    provinces = { 316 332 394 399 3206 3277 3341 6235 6364 11251 }
+
+    manpower = 11251
+    buildings_max_level_factor = 1.000
+}

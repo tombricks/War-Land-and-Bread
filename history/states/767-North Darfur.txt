@@ -1,0 +1,25 @@
+state = {
+	id = 767
+	name = "STATE_767"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+		owner = UAR
+		add_core_of = UAR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 7987 8103 10900 }
+
+	manpower = 10900
+	buildings_max_level_factor = 1.000
+}

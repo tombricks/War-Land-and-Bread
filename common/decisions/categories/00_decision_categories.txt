@@ -1,0 +1,6 @@
+Radical_Socialist_Revolution = {
+	icon = generic_research
+	visible = {
+		is_debug = yes
+	}
+}

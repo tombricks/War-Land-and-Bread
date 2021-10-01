@@ -1,0 +1,215 @@
+﻿l_english:
+ ZZZ: "Anarchy"
+ ZZZ_DEF: "Anarchy"
+ ZZZ_ADJ: "Anarchy"
+
+ RUS: "Russian Soviet Federative Socialist Republic"
+ RUS_DEF: "The Russian Soviet Federative Socialist Republic"
+ RUS_ADJ: "Russian"
+
+ KAZ: "Kazakh Soviet Socialist Republic"
+ KAZ_DEF: "The Kazakh Soviet Socialist Republic"
+ KAZ_ADJ: "Kazakh"
+
+ BLR: "Byelorussian Soviet Socialist Republic"
+ BLR_DEF: "The Byelorussian Soviet Socialist Republic"
+ BLR_ADJ: "Byelorussian"
+
+ UKR: "Ukrainian Soviet Socialist Republic"
+ UKR_DEF: "The Ukrainian Soviet Socialist Republic"
+ UKR_ADJ: "Ukrainian"
+
+ LIT: "Lithuanian Soviet Socialist Republic"
+ LIT_DEF: "The Lithuanian Soviet Socialist Republic"
+ LIT_ADJ: "Lithuanian"
+
+ LAT: "Latvian Soviet Socialist Republic"
+ LAT_DEF: "The Latvian Soviet Socialist Republic"
+ LAT_ADJ: "Latvian"
+
+ EST: "Estonian Soviet Socialist Republic"
+ EST_DEF: "The Estonian Soviet Socialist Republic"
+ EST_ADJ: "Estonian"
+
+ FIN: "Karelo-Finnish Soviet Socialist Republic"
+ FIN_DEF: "The Karelo-Finnish Soviet Socialist Republic"
+ FIN_ADJ: "Finnish"
+
+ UZB: "Uzbek Soviet Socialist Republic"
+ UZB_DEF: "The Uzbek Soviet Socialist Republic"
+ UZB_ADJ: "Uzbek"
+
+ TKM: "Turkmen Soviet Socialist Republic"
+ TKM_DEF: "The Turkmen Soviet Socialist Republic"
+ TKM_ADJ: "Turkmen"
+
+ TAJ: "Tajik Soviet Socialist Republic"
+ TAJ_DEF: "The Tajik Soviet Socialist Republic"
+ TAJ_ADJ: "Tajik"
+
+ KYR: "Kirghiz Soviet Socialist Republic"
+ KYR_DEF: "The Kirghiz Soviet Socialist Republic"
+ KYR_ADJ: "Kirghiz"
+
+ GEO: "Georgian Soviet Socialist Republic"
+ GEO_DEF: "The Georgian Soviet Socialist Republic"
+ GEO_ADJ: "Georgian"
+
+ ARM: "Armenian Soviet Socialist Republic"
+ ARM_DEF: "The Armenian Soviet Socialist Republic"
+ ARM_ADJ: "Armenian"
+
+ AZR: "Azerbaijan Soviet Socialist Republic"
+ AZR_DEF: "The Azerbaijan Soviet Socialist Republic"
+ AZR_ADJ: "Azerbaijan"
+
+ TAN: "Tuvan Soviet Socialist Republic"
+ TAN_DEF: "The Tuvan Soviet Socialist Republic"
+ TAN_ADJ: "Tuvan"
+
+ MOL: "Moldavian Soviet Socialist Republic"
+ MOL_DEF: "The Moldavian Soviet Socialist Republic"
+ MOL_ADJ: "Moldavian"
+
+ GER: "German Democratic People's Republic"
+ GER_DEF: "The German Democratic People's Republic"
+ GER_ADJ: "German"
+
+ ZAP: "Socialist Federative Union of Zapadoslavia"
+ ZAP_DEF: "The Socialist Federative Union of Zapadoslavia"
+ ZAP_ADJ: "Zapadoslav"
+
+ POL: "Polish People's Republic"
+ POL_DEF: "The Polish People's Republic"
+ POL_ADJ: "Polish"
+
+ CZE: "Czech Socialist Republic"
+ CZE_DEF: "The Czech Socialist Republic"
+ CZE_ADJ: "Czech"
+
+ SLO: "Slovak Democratic Republic"
+ SLO_DEF: "The Slovak Democratic Republic"
+ SLO_ADJ: "Slovak"
+
+ AUS: "Socialist Republic of Austria"
+ AUS_DEF: "The Socialist Republic of Austria"
+ AUS_ADJ: "Austrian"
+
+ ROM: "Socialist Republic of Romania"
+ ROM_DEF: "The Socialist Republic of Romania"
+ ROM_ADJ: "Romanian"
+
+ YUG: "Socialist Federal Union of Yugoslavia"
+ YUG_DEF: "The Socialist Federal Union of Yugoslavia"
+ YUG_ADJ: "Yugoslav"
+
+ BUL: "People's Republic of Bulgaria"
+ BUL_DEF: "The People's Republic of Bulgaria"
+ BUL_ADJ: "Bulgarian"
+
+ HUN: "Hungarian People's Republic"
+ HUN_DEF: "The Hungarian People's Republic"
+ HUN_ADJ: "Hungarian"
+
+ ALB: "People's Socialist Republic of Albania"
+ ALB_DEF: "The People's Socialist Republic of Albania"
+ ALB_ADJ: "Albanian"
+
+ GRE: "Democratic Republic of Greece"
+ GRE_DEF: "The Democratic Republic of Greece"
+ GRE_ADJ: "Greek"
+
+ FRA: "French Socialist Republic"
+ FRA_DEF: "The French Socialist Republic"
+ FRA_ADJ: "French"
+
+ OCC: "Federation of Occitania"
+ OCC_DEF: "The Federation of Occitania"
+ OCC_ADJ: "Occitan"
+
+ LUX: "Luxembourg Workers' Republic"
+ LUX_DEF: "The Luxembourg Workers' Republic"
+ LUX_ADJ: "Luxembourg"
+
+ BEL: "Belgian Federal People's Republic"
+ BEL_DEF: "The Belgian Federal People's Republic"
+ BEL_ADJ: "Belgian"
+
+ HOL: "Dutch Socialist Republic"
+ HOL_DEF: "The Dutch Socialist Republic"
+ HOL_ADJ: "Dutch"
+
+ ITA: "Democratic Socialist Republic of Italy"
+ ITA_DEF: "The Democratic Socialist Republic of Italy"
+ ITA_ADJ: "Italian"
+
+ SWI: "Swiss Confederation"
+ SWI_DEF: "The Swiss Confederation"
+ SWI_ADJ: "Swiss"
+
+ ENG: "Union of Britain"
+ ENG_DEF: "The Union of Britain"
+ ENG_ADJ: "British"
+ ENG_Hypersocialism: "Albion State"
+ ENG_Hypersocialism_DEF: "The Albion State"
+ ENG_Hypersocialism_ADJ: "British"
+
+ SPA: "Spanish Federal People's Republic"
+ SPA_DEF: "the Spanish Federal People's Republic"
+ SPA_ADJ: "Spanish"
+
+ BAS: "Basque Federal People's Republic"
+ BAS_DEF: "the Basque Federal People's Republic"
+ BAS_ADJ: "Basque"
+
+ CAT: "Catalan Federal People's Republic"
+ CAT_DEF: "the Catalan Federal People's Republic"
+ CAT_ADJ: "Catalan"
+
+ POR: "Portuguese Federal People's Republic"
+ POR_DEF: "the Portuguese Federal People's Republic"
+ POR_ADJ: "Portuguese"
+
+ SWE: "Swedish Socialist People's Republic"
+ SWE_DEF: "the Swedish Socialist People's Republic"
+ SWE_ADJ: "Swedish"
+
+ DEN: "Danish Republic"
+ DEN_DEF: "the Danish Republic"
+ DEN_ADJ: "Danish"
+
+ NOR: "Norwegian Socialist Republic"
+ NOR_DEF: "the Norwegian Socialist Republic"
+ NOR_ADJ: "Norwegian"
+
+ CHI: "People's Republic of China"
+ CHI_DEF: "the People's Republic of China"
+ CHI_ADJ: "Chinese"
+
+ MON: "Mongolian People's Republic"
+ MON_DEF: "the Mongolian People's Republic"
+ MON_ADJ: "Mongolian"
+
+ KOR: "People's Republic of Korea"
+ KOR_DEF: "the People's Republic of Korea"
+ KOR_ADJ: "Korean"
+
+ UAR: "Union of Arab Republics"
+ UAR_DEF: "the Union of Arab Republics"
+ UAR_ADJ: "Arab"
+
+ LBA: "Arab Islamic Republic"
+ LBA_DEF: "the Arab Islamic Republic"
+ LBA_ADJ: "Libyan"
+
+ USA: "United Socialist States of North America"
+ USA_DEF: "the United Socialist States of North America"
+ USA_ADJ: "American"
+
+ ICE: "Confederation of Iceland"
+ ICE_DEF: "the Confederation of Iceland"
+ ICE_ADJ: "Icelandic"
+
+ SYE: "People's Democratic Republic of Yemen"
+ SYE_DEF: "the People's Democratic Republic of Yemen"
+ SYE_ADJ: "South Yemeni"

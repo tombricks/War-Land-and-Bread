@@ -1,0 +1,28 @@
+state = {
+    id = 10
+    name = "STATE_10"
+    state_category = town
+    
+    resources = {
+        steel = 1
+        oil = 1
+        aluminium = 1
+    }
+
+    history = {
+        victory_points = { 3544 25 }
+        victory_points = { 402 1 }
+		owner = ZAP
+		add_core_of = ZAP
+		add_core_of = POL
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+        }
+    }
+
+    provinces = { 402 467 524 3482 3544 6511 9400 11492 12562 }
+
+    manpower = 12562
+    buildings_max_level_factor = 1.000
+}

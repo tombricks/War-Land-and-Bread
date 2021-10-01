@@ -1,0 +1,26 @@
+state = {
+	id = 790
+	name = "STATE_790"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 11707 3 }
+        owner = SPA
+		add_core_of = SPA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 738 3729 3744 6749 9703 9719 11688 11707 13218 }
+
+	manpower = 1197252
+	buildings_max_level_factor = 1.000
+}

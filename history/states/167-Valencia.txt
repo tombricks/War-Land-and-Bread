@@ -1,0 +1,27 @@
+state = {
+    id = 167
+    name = "STATE_167"
+    state_category = town
+    
+    resources = {
+        steel = 1
+        oil = 1
+        aluminium = 1
+    }
+
+    history = {
+        victory_points = { 6906 10 }
+        victory_points = { 4098 3 }
+        owner = SPA
+		add_core_of = SPA
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+        }
+    }
+
+    provinces = { 962 3799 3873 4098 6817 6856 6906 6959 9889 9896 }
+
+    manpower = 9896
+    buildings_max_level_factor = 1.000
+}

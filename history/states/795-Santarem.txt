@@ -1,0 +1,27 @@
+state = {
+	id = 795
+	name = "STATE_795"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 9869 1 }
+        victory_points = { 924 1 }
+        owner = POR
+		add_core_of = POR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 844 924 3846 3886 3926 6986 9869 11768 }
+
+	manpower = 729712
+	buildings_max_level_factor = 1.000
+}

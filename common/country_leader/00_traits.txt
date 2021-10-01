@@ -1,0 +1,20 @@
+leader_traits = {
+	SUBIDEOLOGY_Eurocommunism = {  }
+	SUBIDEOLOGY_Mao_Zedong_Thought = {  }
+	SUBIDEOLOGY_Arab_Socialism = {  }
+	SUBIDEOLOGY_White_Nationalism = {  }
+	SUBIDEOLOGY_Bill_of_Rights_Socialism = {  }
+	SUBIDEOLOGY_Marxism_Leninism_Maoism = {  }
+	SUBIDEOLOGY_Constitutional_Marxism = {  }
+	SUBIDEOLOGY_New_Synthesis_Communism = {  }
+	SUBIDEOLOGY_Libertarian_Socialism = {  }
+	SUBIDEOLOGY_Marxism_Leninism_Hoxhaism = {  }
+	SUBIDEOLOGY_Market_Socialism = {  }
+	SUBIDEOLOGY_Anti_Capitalism = {  }
+
+	SUBIDEOLOGY_Hypersocialism = {  }
+	SUBIDEOLOGY_Marxism_Leninism = {  }
+	SUBIDEOLOGY_New_Marxism = {  }
+	SUBIDEOLOGY_Reformist_Socialism = {  }
+	SUBIDEOLOGY_Reactionism = {  }
+}

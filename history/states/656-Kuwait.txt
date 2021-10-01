@@ -1,0 +1,26 @@
+state = {
+	id = 656
+	name = "STATE_656"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 8085 1 }
+		owner = UAR
+		add_core_of = UAR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 8085 }
+
+	manpower = 8085
+	buildings_max_level_factor = 1.000
+}

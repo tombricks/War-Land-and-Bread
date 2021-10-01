@@ -1,0 +1,29 @@
+state = {
+	id = 212
+	name = "STATE_212"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 6923 10 }
+        victory_points = { 6814 3 }
+        victory_points = { 9862 1 }
+		owner = YUG
+		add_core_of = YUG
+		add_core_of = BUL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 878 893 3937 6814 6857 6923 6952 6982 9818 9862 11813 }
+
+	manpower = 11813
+	buildings_max_level_factor = 1.000
+}

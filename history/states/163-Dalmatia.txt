@@ -1,0 +1,25 @@
+state = {
+    id = 163
+    name = "STATE_163"
+    state_category = town
+    
+    resources = {
+        steel = 1
+        oil = 1
+        aluminium = 1
+    }
+
+    history = {
+		owner = YUG
+		add_core_of = YUG
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+        }
+    }
+
+    provinces = { 3943 }
+
+    manpower = 3943
+    buildings_max_level_factor = 1.000
+}

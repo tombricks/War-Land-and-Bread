@@ -1,0 +1,28 @@
+state = {
+	id = 4
+	name = "STATE_4"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 11666 30.0 }
+        victory_points = { 9648 5 }
+		owner = GER
+		add_core_of = GER
+		add_core_of = AUS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 653 704 3700 3718 6690 6739 9527 9646 9648 9661 9679 11630 11666 }
+
+	manpower = 11666
+	buildings_max_level_factor = 1.000
+}

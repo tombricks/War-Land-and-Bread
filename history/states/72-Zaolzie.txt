@@ -1,0 +1,27 @@
+state = {
+	id = 72
+	name = "STATE_72"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+		owner = ZAP
+		add_core_of = ZAP
+		add_core_of = POL
+		add_core_of = CZE
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 9551 9567 }
+
+	manpower = 9567
+	buildings_max_level_factor = 1.000
+}

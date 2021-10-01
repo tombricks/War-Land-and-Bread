@@ -1,0 +1,40 @@
+
+state={
+	id=14
+	name="STATE_14"
+	resources={
+		steel=1.000
+		oil=1.000
+		aluminium=1.000
+	}
+
+	history={
+		victory_points = {
+			3552 20 
+		}
+		victory_points = {
+			6536 5 
+		}
+		victory_points = {
+			9495 1 
+		}
+		victory_points = {
+			11465 5 
+		}
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		503 527 542 3552 3758 6536 6548 6572 9495 9510 9525 9867 11465 11508 11616 
+	}
+	manpower=11508
+	buildings_max_level_factor=1.000
+	state_category=town
+}

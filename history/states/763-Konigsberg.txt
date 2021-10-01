@@ -1,0 +1,27 @@
+state = {
+	id = 763
+	name = "STATE_763"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
+
+	history = {
+        victory_points = { 6332 10 }
+		owner = RUS
+		add_core_of = RUS
+		add_claim_by = GER
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = { 281 348 395 3384 6332 11265 }
+
+	manpower = 11265
+	buildings_max_level_factor = 1.000
+}
