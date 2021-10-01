@@ -12,10 +12,8 @@ state = {
 	history = {
 		owner = ISI
 		add_core_of = ISI
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 0 } 
 	}
 
 	provinces = { 4932 5081 8030 8118 10870 12740 12768 }

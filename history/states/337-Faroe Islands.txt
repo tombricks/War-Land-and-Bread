@@ -12,10 +12,8 @@ state = {
 	history = {
 		owner = DEN
 		add_core_of = DEN
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 4 13003 = { naval_base = 1 } } 
 	}
 
 	provinces = { 13003 }

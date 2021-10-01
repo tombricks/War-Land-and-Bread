@@ -1,26 +1,24 @@
 state = {
-    id = 175
-    name = "STATE_175"
-    state_category = town
-    
-    resources = {
-        steel = 1
-        oil = 1
-        aluminium = 1
-    }
+	id = 175
+	name = "STATE_175"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
 
-    history = {
-        victory_points = { 6832 1 }
-        owner = SPA
+	history = {
+		victory_points = { 6832 1 }
+		owner = SPA
 		add_core_of = SPA
-        buildings = {
-            infrastructure = 2
-            industrial_complex = 1
-        }
-    }
+		
+		buildings = {industrial_complex = 1 infrastructure = 6 } 
+	}
 
-    provinces = { 3953 6800 6832 6896 9778 9828 9881 11863 12081 13229 }
+	provinces = { 3953 6800 6832 6896 9778 9828 9881 11863 12081 13229 }
 
-    manpower = 526903
-    buildings_max_level_factor = 1.000
+	manpower = 526903
+	buildings_max_level_factor = 1.000
 }

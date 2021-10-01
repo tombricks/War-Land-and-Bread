@@ -11,10 +11,8 @@ state = {
 
 	history = {
 		owner = ZZZ
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 1 } 
 	}
 
 	provinces = { 1116 1996 10810 12322 12730 }

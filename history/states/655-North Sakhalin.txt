@@ -12,10 +12,8 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 3 air_base = 1 } 
 	}
 
 	provinces = { 855 1742 1755 }

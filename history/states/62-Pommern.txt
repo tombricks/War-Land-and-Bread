@@ -10,13 +10,12 @@ state = {
 	}
 
 	history = {
-        victory_points = { 9388 1 }
+		victory_points = { 9388 1 }
 		owner = GER
 		add_core_of = GER
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 6 fuel_silo = 1 } 
+		buildings = {air_base = 8 } 
 	}
 
 	provinces = { 349 3207 3258 3312 3340 9388 }

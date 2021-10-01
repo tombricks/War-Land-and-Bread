@@ -10,13 +10,11 @@ state = {
 	}
 
 	history = {
-        victory_points = { 6626 1 }
+		victory_points = { 6626 1 }
 		owner = YUG
 		add_core_of = YUG
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 2 6626 = { naval_base = 5 } } 
 	}
 
 	provinces = { 599 6626 11595 11735 }

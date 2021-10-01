@@ -10,13 +10,11 @@ state = {
 	}
 
 	history = {
-        victory_points = { 6583 5 }
+		victory_points = { 6583 5 }
 		owner = LUX
 		add_core_of = LUX
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 6 arms_factory = 1 industrial_complex = 3 } 
 	}
 
 	provinces = { 6583 }

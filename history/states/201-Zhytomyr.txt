@@ -1,26 +1,24 @@
 state = {
-    id = 201
-    name = "STATE_201"
-    state_category = town
-    
-    resources = {
-        steel = 1
-        oil = 1
-        aluminium = 1
-    }
+	id = 201
+	name = "STATE_201"
+	state_category = town
+	
+	resources = {
+		steel = 1
+		oil = 1
+		aluminium = 1
+	}
 
-    history = {
-        victory_points = { 6593 3 }
+	history = {
+		victory_points = { 6593 3 }
 		owner = UKR
 		add_core_of = UKR
-        buildings = {
-            infrastructure = 2
-            industrial_complex = 1
-        }
-    }
+		
+		buildings = {infrastructure = 5 air_base = 3 } 
+	}
 
-    provinces = { 441 550 3470 3570 6593 9466 9493 9533 11464 11477 11490 11514 }
+	provinces = { 441 550 3470 3570 6593 9466 9493 9533 11464 11477 11490 11514 }
 
-    manpower = 11514
-    buildings_max_level_factor = 1.000
+	manpower = 11514
+	buildings_max_level_factor = 1.000
 }

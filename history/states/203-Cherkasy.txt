@@ -10,13 +10,11 @@ state = {
 	}
 
 	history = {
-        victory_points = { 488 5 }
+		victory_points = { 488 5 }
 		owner = UKR
 		add_core_of = UKR
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 5 industrial_complex = 1 } 
 	}
 
 	provinces = { 434 458 488 3452 3468 6451 6478 9451 9491 11409 11424 11438 11454 11530 }

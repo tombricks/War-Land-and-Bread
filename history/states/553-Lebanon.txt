@@ -10,13 +10,11 @@ state = {
 	}
 
 	history = {
-        victory_points = { 792 5 }
+		victory_points = { 792 5 }
 		owner = UAR
 		add_core_of = UAR
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 4 industrial_complex = 1 air_base = 5 792 = { naval_base = 3 } } 
 	}
 
 	provinces = { 792 1108 11919 }

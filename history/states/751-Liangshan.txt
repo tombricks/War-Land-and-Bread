@@ -10,14 +10,13 @@ state = {
 	}
 
 	history = {
-        victory_points = { 12141 3 }
-        victory_points = { 7294 1 }
+		victory_points = { 12141 3 }
+		victory_points = { 7294 1 }
 		owner = CHI
 		add_core_of = CHI
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 1 } 
+		buildings = {industrial_complex = 1 infrastructure = 2 } 
 	}
 
 	provinces = { 1999 2067 7294 10726 10841 12141 12819 }

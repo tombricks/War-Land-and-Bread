@@ -10,13 +10,12 @@ state = {
 	}
 
 	history = {
-        victory_points = { 1459 3 }
+		victory_points = { 1459 3 }
 		owner = UZB
 		add_core_of = UZB
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 5 industrial_complex = 3 air_base = 1 } 
+		buildings = {industrial_complex = 4 } 
 	}
 
 	provinces = { 1459 1573 4629 7639 7682 7775 10205 10488 10671 11687 12239 12722 }

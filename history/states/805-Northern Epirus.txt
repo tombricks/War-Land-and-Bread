@@ -10,13 +10,11 @@ state = {
 	}
 
 	history = {
-        victory_points = { 914 3 }
+		victory_points = { 914 3 }
 		owner = ALB
 		add_core_of = ALB
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 2 } 
 	}
 
 	provinces = { 914 13234 13235 }

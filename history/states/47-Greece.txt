@@ -10,19 +10,17 @@ state = {
 	}
 
 	history = {
-        victory_points = { 4109 20 }
-        victory_points = { 3973 3 }
-        victory_points = { 863 1 }
-        victory_points = { 3864 3 }
-        victory_points = { 976 1 }
-        victory_points = { 7127 3 }
-        victory_points = { 3988 1 }
-        owner = GRE
+		victory_points = { 4109 20 }
+		victory_points = { 3973 3 }
+		victory_points = { 863 1 }
+		victory_points = { 3864 3 }
+		victory_points = { 976 1 }
+		victory_points = { 7127 3 }
+		victory_points = { 3988 1 }
+		owner = GRE
 		add_core_of = GRE
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 4 industrial_complex = 3 dockyard = 1 air_base = 4 4109 = { naval_base = 9 } } 
 	}
 
 	provinces = { 863 976 1109 3864 3973 3988 4109 6930 7127 }

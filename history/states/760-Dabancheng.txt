@@ -12,10 +12,8 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 3 arms_factory = 1 } 
 	}
 
 	provinces = { 1838 4704 4843 7732 10839 12524 12598 12671 }

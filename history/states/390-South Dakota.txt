@@ -10,13 +10,11 @@ state = {
 	}
 
 	history = {
-        victory_points = { 1747 1 }
+		victory_points = { 1747 1 }
 		owner = USA
 		add_core_of = USA
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 4 industrial_complex = 1 } 
 	}
 
 	provinces = { 1747 1875 3750 4839 4880 7745 7771 7862 10569 10595 12620 12667 }

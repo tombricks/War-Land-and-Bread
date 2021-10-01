@@ -12,13 +12,9 @@ state={
 		victory_points = {
 			651 1 
 		}
-		owner = FRA
-		add_core_of = FRA
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-
-		}
+		owner = FRA		add_core_of = FRA
+		
+		buildings = {infrastructure = 6 } 
 
 	}
 

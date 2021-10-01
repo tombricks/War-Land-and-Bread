@@ -12,10 +12,8 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 5 industrial_complex = 2 4285 = { naval_base = 2 } } 
 	}
 
 	provinces = { 634 1424 4285 4342 4362 4432 7379 12289 }

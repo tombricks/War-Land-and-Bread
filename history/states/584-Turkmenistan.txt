@@ -10,13 +10,11 @@ state = {
 	}
 
 	history = {
-        victory_points = { 12333 1 }
+		victory_points = { 12333 1 }
 		owner = TKM
 		add_core_of = TKM
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 2 industrial_complex = 1 } 
 	}
 
 	provinces = { 756 1493 1593 1632 1649 4482 4549 4563 4599 4958 5003 7477 7491 7560 7563 7618 7635 7924 8099 9605 10357 10359 10406 10414 10485 10510 10742 12333 12359 12491 }

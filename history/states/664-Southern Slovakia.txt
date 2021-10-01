@@ -10,15 +10,13 @@ state = {
 	}
 
 	history = {
-        victory_points = { 6573 1 }
+		victory_points = { 6573 1 }
 		owner = ZAP
 		add_core_of = ZAP
 		add_core_of = SLO
 		add_core_of = CZE
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 6 industrial_complex = 3 } 
 	}
 
 	provinces = { 3565 3716 6561 6573 9537 11679 }

@@ -10,13 +10,11 @@ state = {
 	}
 
 	history = {
-        victory_points = { 875 3 }
-        owner = SPA
+		victory_points = { 875 3 }
+		owner = SPA
 		add_core_of = SPA
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 6 industrial_complex = 1 } 
 	}
 
 	provinces = { 875 879 950 1090 1192 3810 3871 4095 6744 7198 10111 12083 }

@@ -36,3 +36,19 @@ for filename in os.listdir("./history/statesvanilla"):
 
 for x in build:
 	print(x+": "+build[x])
+	filetxt = ""
+	with open("./history/states/"+x, "r", encoding="utf8") as file:
+		filetxt = file.read()
+	filetxt = filetxt.replace("    ", "	").replace("""buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}""", build[x])
+	filetxt = filetxt.replace("""
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}""", build[x])
+	
+	with open("./history/states/"+x, "w", encoding="utf8") as file:
+		file.write(filetxt)

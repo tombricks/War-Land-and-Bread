@@ -10,13 +10,11 @@ state = {
 	}
 
 	history = {
-        victory_points = { 8051 1 }
+		victory_points = { 8051 1 }
 		owner = ISI
 		add_core_of = ISI
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 2 8051 = { naval_base = 2 } } 
 	}
 
 	provinces = { 8051 }

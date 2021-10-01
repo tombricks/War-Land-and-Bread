@@ -10,13 +10,11 @@ state = {
 	}
 
 	history = {
-        victory_points = { 1005 5 }
+		victory_points = { 1005 5 }
 		owner = TUR
 		add_core_of = TUR
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 3 industrial_complex = 1 1005 = { naval_base = 4 } } 
 	}
 
 	provinces = { 1005 1119 9941 10122 11917 12013 12016 12096 }

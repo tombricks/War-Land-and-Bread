@@ -10,13 +10,11 @@ state = {
 	}
 
 	history = {
-        victory_points = { 9292 5 }
+		victory_points = { 9292 5 }
 		owner = RUS
 		add_core_of = RUS
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 6 industrial_complex = 1 } 
 	}
 
 	provinces = { 1233 1292 1294 1327 1775 4242 7285 9292 10170 10213 10542 12106 12157 12287 12584 }

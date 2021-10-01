@@ -14,10 +14,8 @@ state = {
 		add_core_of = ZAP
 		add_core_of = POL
 		add_core_of = CZE
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 6 industrial_complex = 1 } 
 	}
 
 	provinces = { 9551 9567 }

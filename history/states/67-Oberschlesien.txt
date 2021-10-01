@@ -10,16 +10,14 @@ state = {
 	}
 
 	history = {
-        victory_points = { 11467 5 }
-        victory_points = { 9511 3 }
+		victory_points = { 11467 5 }
+		victory_points = { 9511 3 }
 		owner = ZAP
 		add_core_of = ZAP
 		add_core_of = POL
 		add_claim_by = GER
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 6 } 
 	}
 
 	provinces = { 479 6512 9457 9511 11467 }

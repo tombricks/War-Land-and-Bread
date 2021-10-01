@@ -10,12 +10,10 @@ state = {
 	}
 
 	history = {
-        victory_points = { 10929 1 }
+		victory_points = { 10929 1 }
 		owner = ZZZ
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 3 } 
 	}
 
 	provinces = { 1874 2151 2216 4851 7842 10929 }

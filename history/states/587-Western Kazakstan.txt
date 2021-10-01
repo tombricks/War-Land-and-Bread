@@ -10,13 +10,11 @@ state = {
 	}
 
 	history = {
-        victory_points = { 1517 1 }
+		victory_points = { 1517 1 }
 		owner = KAZ
 		add_core_of = KAZ
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
+		buildings = {infrastructure = 1 } 
 	}
 
 	provinces = { 475 642 1517 3593 4523 4620 7641 10262 11701 12163 12383 13008 }
