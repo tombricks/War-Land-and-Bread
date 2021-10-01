@@ -1,7 +1,7 @@
 state = {
 	id = 586
 	name = "STATE_586"
-	state_category = town
+	state_category = city
 	
 	resources = {
 		steel = 1

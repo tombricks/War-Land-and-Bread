@@ -1,7 +1,7 @@
 state = {
 	id = 6
 	name = "STATE_6"
-	state_category = town
+	state_category = metropolis
 	
 	resources = {
 		steel = 1
@@ -18,7 +18,7 @@ state = {
 		owner = BEL
 		add_core_of = BEL
 		
-		buildings = {infrastructure = 9 arms_factory = 5 industrial_complex = 7 air_base = 3 6560 = { naval_base = 3 } 6598 = { naval_base = 8 } } 
+		buildings = {infrastructure = 9 arms_factory = 4 industrial_complex = 6 air_base = 3 6560 = { naval_base = 3 } 6598 = { naval_base = 8 } } 
 	}
 
 	provinces = { 516 3576 6446 6560 6598 9574 11419 13068 }

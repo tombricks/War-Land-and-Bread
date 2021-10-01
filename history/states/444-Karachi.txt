@@ -1,7 +1,7 @@
 state = {
 	id = 444
 	name = "STATE_444"
-	state_category = town
+	state_category = wasteland
 	
 	resources = {
 		steel = 1

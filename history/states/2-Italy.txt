@@ -1,7 +1,7 @@
 state = {
 	id = 2
 	name = "STATE_2"
-	state_category = town
+	state_category = city
 	
 	resources = {
 		steel = 1
@@ -16,7 +16,6 @@ state = {
 		add_core_of = ITA
 		
 		buildings = {infrastructure = 8 air_base = 8 arms_factory = 1 industrial_complex = 4 11751 = { naval_base = 5 } 11846 = { naval_base = 2 } } 
-		buildings = {arms_factory = 2 industrial_complex = 5 } 
 	}
 
 	provinces = { 923 6862 9794 9904 11751 11846 11882 }

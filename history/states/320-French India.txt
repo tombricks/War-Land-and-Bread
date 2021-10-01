@@ -1,7 +1,7 @@
 state = {
 	id = 320
 	name = "STATE_320"
-	state_category = town
+	state_category = enclave
 	
 	resources = {
 		steel = 1
