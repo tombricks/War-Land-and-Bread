@@ -7,4 +7,36 @@ on_actions = {
 			}
 		}
 	}
+	on_capitulation = {
+		effect = {
+			log = "Capitulation: [FROM.GetNameWithFlag] defeats [ROOT.GetNameWithFlag]"
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			log = "Civil War End: [ROOT.GetNameWithFlag] defeats [FROM.GetNameWithFlag]"
+			if = {
+				limit = {
+					ROOT = {
+						SOM_Somali_Civil_War_Combatant = yes
+					}
+					FROM = {
+						SOM_Somali_Civil_War_Combatant = yes
+					}
+				}
+				if = {
+					limit = {
+						SOM_Somali_Civil_War_Active = yes
+					}
+					log = " - Somali Civil War Continuing"
+					else = {
+						ROOT = {
+							save_global_event_target_as = SOM_Somali_Civil_War_Winner
+						}
+						log = " - Somali Civil War Over: [SOM_Somali_Civil_War_Winner.GetNameWithFlag] Victory"
+					}
+				}
+			}
+		}
+	}
 }

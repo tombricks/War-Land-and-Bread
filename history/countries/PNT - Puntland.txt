@@ -1,6 +1,8 @@
 capital = 808
 set_stability = 0.6
 set_war_support = 0.6
+oob = "PNT"
+set_country_flag = has_starting_oob
 
 set_technology = {
 	infantry_weapons = 1

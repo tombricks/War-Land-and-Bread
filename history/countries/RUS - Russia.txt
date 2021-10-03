@@ -34,6 +34,13 @@ create_country_leader = {
 	traits = { SUBIDEOLOGY_Marxism_Leninism }
 }
 
+create_country_leader = {
+	name = "Yevgeny Stalin"
+	picture = "gfx/leaders/RUS/Yevgeny Stalin.dds"
+	ideology = Hypersocialism_ideology
+	traits = { SUBIDEOLOGY_Stalin_Thought }
+}
+
 create_faction = "United Nations"
 set_autonomy = { target = KAZ autonomy_state = Autonomy_Autonomous_Zone }
 set_autonomy = { target = UKR autonomy_state = Autonomy_Autonomous_Zone }

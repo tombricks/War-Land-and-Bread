@@ -14,6 +14,7 @@ state = {
 		owner = ZZZ
 		
 		buildings = {infrastructure = 3 arms_factory = 1 industrial_complex = 5 air_base = 2 } 
+		add_extra_state_shared_building_slots = 2
 	}
 
 	provinces = { 2079 7936 7991 7993 10747 10790 10846 }

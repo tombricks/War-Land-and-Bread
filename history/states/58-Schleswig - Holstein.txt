@@ -15,8 +15,7 @@ state = {
 		owner = GER
 		add_core_of = GER
 		
-		buildings = {infrastructure = 6 arms_factory = 2 dockyard = 6 air_base = 5 6389 = { naval_base = 8 } } 
-		buildings = {synthetic_refinery = 3 anti_air_building = 5 dockyard = 7 arms_factory = 4 } 
+		buildings = {infrastructure = 6 arms_factory = 2 dockyard = 6 air_base = 5 6389 = { naval_base = 8 } }
 	}
 
 	provinces = { 317 3231 3368 6257 6389 9320 9347 11331 11366 }

@@ -14,3 +14,11 @@ SOM_Somali_Civil_War_Active = {
 		}
 	}
 }
+SOM_Somali_Civil_War_Combatant = {
+	OR = {
+		original_tag = SML
+		original_tag = SOM
+		original_tag = PNT
+		original_tag = OGA
+	}
+}
