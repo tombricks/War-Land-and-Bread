@@ -1105,3 +1105,13 @@ minors_dont_spy = {
 		value = -10
 	}
 }
+build_fucking_armies = {
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = force_build_armies
+		value = 100
+	}
+}

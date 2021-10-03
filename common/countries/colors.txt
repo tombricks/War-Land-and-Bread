@@ -218,3 +218,23 @@ TUR = {
 	color = rgb { 199 74 71 }
 	color_ui = rgb { 199 74 71 }
 }
+ETH = {
+	color = rgb { 196 54 83 }
+	color_ui = rgb { 196 54 83 }
+}
+SML = {
+	color = rgb { 46 112 46 }
+	color_ui = rgb { 46 112 46 }
+}
+SOM = {
+	color = rgb { 81 84 142 }
+	color_ui = rgb { 81 84 142 }
+}
+OGA = {
+	color = rgb { 198 181 96 }
+	color_ui = rgb { 198 181 96 }
+}
+PNT = {
+	color = rgb { 42 32 28 }
+	color_ui = rgb { 42 32 28 }
+}

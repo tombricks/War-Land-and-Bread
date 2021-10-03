@@ -640,3 +640,27 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 		}
 	}
 }
+DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = SML
+					tag = SOM
+					tag = PNT
+					tag = OGA
+				}
+				OR = {
+					has_war_with = SML
+					has_war_with = SOM
+					has_war_with = PNT
+					has_war_with = OGA
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = DIPLOMACY_JOIN_ALLY_Somali_Civil_War_TT
+			always = no
+		}
+	}
+}

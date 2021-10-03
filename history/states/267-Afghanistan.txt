@@ -14,7 +14,7 @@ state = {
 		victory_points = { 12248 1 }
 		owner = ZZZ
 		
-		buildings = {infrastructure = 2 arms_factory = 1 industrial_complex = 2 } 
+		buildings = {infrastructure = 2 arms_factory = 1 industrial_complex = 1 } 
 	}
 
 	provinces = { 5082 7448 7519 7584 7916 7984 10476 10737 10781 10826 10852 10896 12248 12314 12653 12769 12831 12877 }

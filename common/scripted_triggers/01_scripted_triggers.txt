@@ -1,0 +1,16 @@
+SOM_Somali_Civil_War_Active = {
+	any_country = {
+		OR = {
+			original_tag = SML
+			original_tag = SOM
+			original_tag = PNT
+			original_tag = OGA
+		}
+		OR = {
+			has_war_with = SML
+			has_war_with = SOM
+			has_war_with = PNT
+			has_war_with = OGA
+		}
+	}
+}

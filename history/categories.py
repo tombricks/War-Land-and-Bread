@@ -26,6 +26,7 @@ for x in categories:
 	with open("./history/states/"+x, "r", encoding="utf8") as file:
 		filetxt = file.read()
 	filetxt = filetxt.replace("state_category = town", "state_category = "+categories[x])
+	filetxt = filetxt.replace("state_category=town", "state_category = "+categories[x])
 
 	with open("./history/states/"+x, "w", encoding="utf8") as file:
 		file.write(filetxt)

@@ -1,6 +1,14 @@
-Radical_Socialist_Revolution = {
+SOM_Somali_Civil_War_Intervention = {
 	icon = generic_research
+	picture = GFX_Decision_Cat_SOM_Somali_Civil_War_Intervention
 	visible = {
-		is_debug = yes
+		OR = {
+			tag = CHI
+			tag = RUS
+			tag = ETH
+			tag = ISI
+		}
+		SOM_Somali_Civil_War_Active = yes
 	}
+	visible_when_empty = yes
 }

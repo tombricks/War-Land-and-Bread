@@ -108,3 +108,5 @@ add_to_array = { CW_Sphere = SPA }
 add_to_array = { CW_Sphere = MON }
 add_to_array = { CW_Sphere = USA }
 add_to_array = { CW_Sphere = TUR }
+
+activate_mission = SOM_Intervention_RUS_Mission

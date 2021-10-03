@@ -96,3 +96,13 @@ d_add_fake_armies = {
 	
 	log = "Done"
 }
+
+d_too_much_trolling = {
+	every_state = {
+		USA = {
+			launch_nuke = {
+				state = PREV
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+﻿l_english:
+ DIPLOMACY_JOIN_ALLY_Somali_Civil_War_TT: "§RCannot intervene directly in the [SOM.GetFlag]§YSomali Civil War§!"
+
+ SOM_Somali_Civil_War_Intervention: "Intervention in the [SOM.GetFlag]§YSomali Civil War§!"
+ SOM_Somali_Civil_War_Intervention_desc: "As this New Cold War sets upon us, a war has broken out in the horn of Africa. The Somali Democratic Republic have lost control over half their nation as Ogaden, Somaliland and Islamist fighters battle to take control. Due to our situation, it would be wise for us to intervene and see our side be led to victory."
+ 
+ SOM_Intervention_ETH_Mission: "Intervening for §Y[OGA.GetNameWithFlag]§!"
+ SOM_Intervention_ETH_Mission_desc: "We managed to spur §Y[OGA.GetNameWithFlag]§! against their oppressors ruling from Mogadishu but we cannot leave them to their own devices or they shall fall. Cruel would be a mother who births their child only to let it perish, would we not be the same should we not help their liberation?"
+ SOM_Intervention_There_Can_Be_Only_One: "No other Somali combatants have volunteers from §Y[ROOT.GetName]§!"
+ 
+ SOM_Intervention_ISI_Mission: "Intervening for §Y[OGA.GetNameWithFlag]§!"
+ 
+ SOM_Intervention_RUS_Mission: "Intervening for §Y[SOM.GetNameWithFlag]§!"
+ 
+ SOM_Intervention_CHI_Mission: "Intervening for §Y[SML.GetNameWithFlag]§!"

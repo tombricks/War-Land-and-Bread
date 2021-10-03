@@ -32,3 +32,9 @@ create_country_leader = {
 	ideology = Hypersocialism_ideology
 	traits = { SUBIDEOLOGY_Islamic_Marxism }
 }
+
+PNT = {
+	ISI = {
+		Protect_my_Child = yes
+	}
+}

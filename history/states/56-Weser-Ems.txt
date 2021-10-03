@@ -17,7 +17,6 @@ state = {
 		add_core_of = GER
 		
 		buildings = {infrastructure = 6 industrial_complex = 2 dockyard = 2 fuel_silo = 1 241 = { naval_base = 8 } air_base = 3 } 
-		buildings = {industrial_complex = 4 dockyard = 3 } 
 	}
 
 	provinces = { 241 247 309 336 3234 9281 11233 11264 11360 11388 }

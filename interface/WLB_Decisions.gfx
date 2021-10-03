@@ -1,0 +1,6 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_Decision_Cat_SOM_Somali_Civil_War_Intervention"
+		texturefile = "gfx/interface/decisions/cat_SOM_Somali_Civil_War_Intervention.dds"
+	}
+}

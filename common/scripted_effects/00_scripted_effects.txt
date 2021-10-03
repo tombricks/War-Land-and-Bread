@@ -149,3 +149,24 @@ clear_sabotaged_resources_if_necesary = {
 		clear_variable = sabotaged_chromium
 	}
 }
+
+Protect_my_Child = {
+	diplomatic_relation = {
+		country = PREV
+		relation = non_aggression_pact
+		active = yes
+	}
+	diplomatic_relation = {
+		country = PREV
+		relation = military_access
+		active = yes
+	}
+	add_opinion_modifier = {
+		target = PREV
+		modifier = offered_support
+	}
+	reverse_add_opinion_modifier = {
+		target = PREV
+		modifier = offered_support
+	}
+}

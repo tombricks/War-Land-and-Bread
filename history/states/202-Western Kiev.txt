@@ -15,7 +15,6 @@ state = {
 		add_core_of = UKR
 		
 		buildings = {infrastructure = 7 arms_factory = 2 industrial_complex = 3 fuel_silo = 1 air_base = 8 } 
-		buildings = {arms_factory = 3 industrial_complex = 3 } 
 	}
 
 	provinces = { 489 504 525 582 3494 3543 6497 9465 9543 9568 11557 }

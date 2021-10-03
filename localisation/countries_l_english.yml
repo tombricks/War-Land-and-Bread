@@ -221,3 +221,26 @@
  TUR: "Turkish Democratic Republic"
  TUR_DEF: "The Turkish Democratic Republic"
  TUR_ADJ: "Turkish"
+
+ ETH: "People's Democratic Republic of Ethiopia"
+ ETH_DEF: "The People's Democratic Republic of Ethiopia"
+ ETH_ADJ: "Ethiopian"
+ ETH_DERG: "Provisional Military Government of Socialist Ethiopia"
+ ETH_DERG_DEF: "The Provisional Military Government of Socialist Ethiopia"
+ ETH_DERG_ADJ: "Ethiopian"
+
+ SML: "People's Republic of Somaliland"
+ SML_DEF: "The People's Republic of Somaliland"
+ SML_ADJ: "Somaliland"
+
+ PNT: "Serene State of Puntland"
+ PNT_DEF: "The Serene State of Puntland"
+ PNT_ADJ: "Somaliland"
+
+ SOM: "Somali Democratic Republic"
+ SOM_DEF: "The Somali Democratic Republic"
+ SOM_ADJ: "Somali"
+
+ OGA: "Ogaden People's Republic"
+ OGA_DEF: "The Ogaden People's Republic"
+ OGA_ADJ: "Ogaden"

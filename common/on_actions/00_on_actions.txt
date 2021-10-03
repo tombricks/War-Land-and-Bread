@@ -1,0 +1,10 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { NOT = { has_country_flag = has_starting_oob } }
+				load_oob = "Filler"
+			}
+		}
+	}
+}
