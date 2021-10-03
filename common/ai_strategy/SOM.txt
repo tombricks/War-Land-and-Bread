@@ -43,6 +43,6 @@ SOM_Somali_Civil_War_CHI = {
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "SML"
-		value = 220
+		value = 300
 	}
 }

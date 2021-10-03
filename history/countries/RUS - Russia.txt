@@ -28,8 +28,8 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Anatoly Lukyanov"
-	picture = "gfx/leaders/RUS/Anatoly Lukyanov.dds"
+	name = "Grigory Romanov"
+	picture = "gfx/leaders/RUS/Grigory Romanov.dds"
 	ideology = Marxism_Leninism_ideology
 	traits = { SUBIDEOLOGY_Marxism_Leninism }
 }
