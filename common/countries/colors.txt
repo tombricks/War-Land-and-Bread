@@ -450,3 +450,23 @@ AFG = {
 	color = rgb { 86 134 45 }
 	color_ui = rgb { 86 134 45 }
 }
+PAK = {
+	color = rgb { 50 112 61 }
+	color_ui = rgb { 50 112 61 }
+}
+IND = {
+	color = rgb { 126 76 192 }
+	color_ui = rgb { 126 76 192 }
+}
+BNG = {
+	color = rgb { 63 127 71 }
+	color_ui = rgb { 63 127 71 }
+}
+NEP = {
+	color = rgb { 84 123 109 }
+	color_ui = rgb { 84 123 109 }
+}
+BHU = {
+	color = rgb { 176 135 155 }
+	color_ui = rgb { 176 135 155 }
+}

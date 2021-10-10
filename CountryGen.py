@@ -1,6 +1,9 @@
 countries = [
-    ["KUR", "Kurdistan", "Democratic Kurdish Republic", "Kurdish", "New_Marxism", "421", "176 90 57", "Middle_Eastern"],
-    ["AFG", "Afghanistan", "Democratic Republic of Afghanistan", "Afghan", "Marxism_Leninism", "267", "86 134 45", "Middle_Eastern"]
+    ["PAK", "Pakistan", "People's Republic of Pakistan", "Pakistani", "New_Marxism", "440", "50 112 61", "Asian"],
+    ["IND", "India", "Indian People's Republic", "Indian", "Marxism_Leninism", "439", "126 76 192", "Asian"],
+    ["BNG", "Bangladesh", "Republic of Bangladesh", "Bangladeshi", "Marxism_Leninism", "430", "63 127 71", "Asian"],
+    ["NEP", "Nepal", "Nepali Socialist Republic", "Nepali", "Marxism_Leninism", "323", "84 123 109", "Asian"],
+    ["BHU", "Bhutan", "Bhutanese People's Republic", "Bhutanese", "New_Marxism", "324", "176 135 155", "Asian"]
 ]
 
 from shutil import copyfile
