@@ -13,6 +13,7 @@ state = {
 		victory_points = { 351 10 }
 		owner = ENG
 		add_core_of = ENG
+		add_core_of = NGL
 		
 		buildings = {infrastructure = 6 industrial_complex = 1 dockyard = 4 air_base = 6 351 = { naval_base = 6 } 3311 = { naval_base = 1 } } 
 	}

@@ -1,9 +1,9 @@
 countries = [
-    ["PAK", "Pakistan", "People's Republic of Pakistan", "Pakistani", "New_Marxism", "440", "50 112 61", "Asian"],
-    ["IND", "India", "Indian People's Republic", "Indian", "Marxism_Leninism", "439", "126 76 192", "Asian"],
-    ["BNG", "Bangladesh", "Republic of Bangladesh", "Bangladeshi", "Marxism_Leninism", "430", "63 127 71", "Asian"],
-    ["NEP", "Nepal", "Nepali Socialist Republic", "Nepali", "Marxism_Leninism", "323", "84 123 109", "Asian"],
-    ["BHU", "Bhutan", "Bhutanese People's Republic", "Bhutanese", "New_Marxism", "324", "176 135 155", "Asian"]
+    ["YEM", "Yemen", "Yemen Arab Republic", "Yemeni", "Reformist_Socialism", "293", "204 90 62", "Middle_Eastern"],
+    ["SCO", "Scotland", "Socialist People's Republic of Scotland", "Scottish", "Reformist_Socialism", "121", "127 0 55", "Western_European"],
+    ["WLS", "Wales", "Socialist People's Republic of Wales", "Welsh", "Reformist_Socialism", "122", "63 202 63", "Western_European"],
+    ["IRE", "Ireland", "Irish Republic", "Irish", "Reformist_Socialism", "113", "130 115 64", "Western_European"],
+    ["NGL", "Northern England", "Northern England Federal Republic", "Northern English", "Reformist_Socialism", "132", "127 51 63", "Western_European"]
 ]
 
 from shutil import copyfile

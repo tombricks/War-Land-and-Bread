@@ -470,3 +470,55 @@ BHU = {
 	color = rgb { 176 135 155 }
 	color_ui = rgb { 176 135 155 }
 }
+EGY = {
+	color = rgb { 163 132 81 }
+	color_ui = rgb { 163 132 81 }
+}
+PAL = {
+	color = rgb { 242 49 167 }
+	color_ui = rgb { 242 49 167 }
+}
+SYR = {
+	color = rgb { 141 107 165 }
+	color_ui = rgb { 141 107 165 }
+}
+LEB = {
+	color = rgb { 102 2 60 }
+	color_ui = rgb { 102 2 60 }
+}
+JOR = {
+	color = rgb { 134 66 68 }
+	color_ui = rgb { 134 66 68 }
+}
+IRQ = {
+	color = rgb { 209 86 86 }
+	color_ui = rgb { 209 86 86 }
+}
+KUW = {
+	color = rgb { 15 134 45 }
+	color_ui = rgb { 15 134 45 }
+}
+SUD = {
+	color = rgb { 135 80 49 }
+	color_ui = rgb { 135 80 49 }
+}
+YEM = {
+	color = rgb { 204 90 62 }
+	color_ui = rgb { 204 90 62 }
+}
+SCO = {
+	color = rgb { 127 0 55 }
+	color_ui = rgb { 127 0 55 }
+}
+WLS = {
+	color = rgb { 63 202 63 }
+	color_ui = rgb { 63 202 63 }
+}
+IRE = {
+	color = rgb { 130 115 64 }
+	color_ui = rgb { 130 115 64 }
+}
+NGL = {
+	color = rgb { 127 51 63 }
+	color_ui = rgb { 127 51 63 }
+}

@@ -15,6 +15,7 @@ state = {
 		victory_points = { 12387 1 }
 		owner = TUR
 		add_core_of = TUR
+		add_core_of = KUR
 		
 		buildings = {infrastructure = 3 air_base = 2 } 
 	}

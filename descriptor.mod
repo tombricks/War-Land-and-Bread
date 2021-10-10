@@ -5,6 +5,7 @@ tags = {
 }
 supported_version = "1.10.*" 
 replace_path="history/countries"
+replace_path="history/states"
 replace_path="common/national_focus"
 replace_path="common/abilities"
 replace_path="common/ai_focuses"
