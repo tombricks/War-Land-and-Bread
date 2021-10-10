@@ -442,3 +442,11 @@ IRN = {
 	color = rgb { 190 116 21 }
 	color_ui = rgb { 190 116 21 }
 }
+KUR = {
+	color = rgb { 176 90 57 }
+	color_ui = rgb { 176 90 57 }
+}
+AFG = {
+	color = rgb { 86 134 45 }
+	color_ui = rgb { 86 134 45 }
+}
