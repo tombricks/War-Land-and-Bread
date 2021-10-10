@@ -1,0 +1,12 @@
+RUS_UN_Dont_Leave = {
+	enable = {
+		is_in_faction_with = RUS
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = "RUS"
+		target = LEAVE_FACTION
+		value = -150
+	}
+}

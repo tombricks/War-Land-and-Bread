@@ -1,0 +1,167 @@
+﻿add_namespace = RUS_Stalin_Putsch
+
+# The Anpilov Putsch
+country_event = {
+	id = RUS_Stalin_Putsch.1
+	title = RUS_Stalin_Putsch.1.TITLE
+	desc = RUS_Stalin_Putsch.1.DESC
+	picture = GFX_Country_Romanov_Gone
+	
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: Event RUS_Stalin_Putsch.1" }
+	
+	option = {
+		name = RUS_Stalin_Putsch.1.A # Glory to Comrade Anpilov
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Viktor Anpilov"
+			picture = "gfx/leaders/RUS/Viktor Anpilov.dds"
+			ideology = Marxism_Leninism_ideology
+			traits = { TITLE_Acting_General_Secretary SUBIDEOLOGY_Marxism_Leninism }
+		}
+		hidden_effect = {
+			news_event = { id = RUS_Stalin_Putsch.2 }
+			news_event = { id = RUS_Stalin_Putsch.3 days = 2 }
+			news_event = { id = RUS_Stalin_Putsch.4 days = 4 }
+			country_event = { id = RUS_Stalin_Putsch.5 days = 7 }
+		}
+	}
+}
+
+# Romanov Removed, Anpilov Empowered
+news_event = {
+	id = RUS_Stalin_Putsch.2
+	title = RUS_Stalin_Putsch.2.TITLE
+	desc = RUS_Stalin_Putsch.2.DESC
+	picture = GFX_News_Metal_USSR_Thing
+	major = yes
+	
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: Event RUS_Stalin_Putsch.2" }
+	
+	option = {
+		name = RUS_Stalin_Putsch.2.A # Glory to Comrade Anpilov
+	}
+}
+
+# USSA Takes Control of the UN
+news_event = {
+	id = RUS_Stalin_Putsch.3
+	title = RUS_Stalin_Putsch.3.TITLE
+	desc = RUS_Stalin_Putsch.3.DESC
+	picture = GFX_News_United_Nations
+	major = yes
+	
+	is_triggered_only = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event RUS_Stalin_Putsch.3"
+		hidden_effect = {
+			USA = {
+				set_faction_leader = yes
+			}
+			RUS = {
+				leave_faction = yes
+			}
+			every_country = {
+				limit = {
+					is_in_faction_with = USA
+					NOT = { has_government = Hypersocialism }
+				}
+				add_opinion_modifier = {
+					target = RUS
+					modifier = RUS_Anpilov_Coup
+				}
+				reverse_add_opinion_modifier = {
+					target = RUS
+					modifier = RUS_Anpilov_Coup
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = RUS_Stalin_Putsch.3.A # Glory to Comrade Anpilov
+	}
+}
+
+# Republics break from Moscow
+news_event = {
+	id = RUS_Stalin_Putsch.4
+	title = RUS_Stalin_Putsch.4.TITLE
+	desc = RUS_Stalin_Putsch.4.DESC
+	picture = GFX_News_USSR_Mosaic
+	major = yes
+	
+	is_triggered_only = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event RUS_Stalin_Putsch.4"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_subject_of = RUS
+					NOT = { tag = TAN }
+				}
+				set_country_flag = RUS_SUBJECT
+				RUS = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_free
+					}
+				}
+				add_opinion_modifier = {
+					target = RUS
+					modifier = RUS_Anpilov_Coup
+				}
+				reverse_add_opinion_modifier = {
+					target = RUS
+					modifier = RUS_Anpilov_Coup
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = RUS_Stalin_Putsch.4.A # Glory to Comrade Anpilov
+	}
+}
+
+# Revolt of the Romanovites
+country_event = {
+	id = RUS_Stalin_Putsch.5
+	title = RUS_Stalin_Putsch.5.TITLE
+	desc = RUS_Stalin_Putsch.5.DESC
+	picture = GFX_News_USSR_Mosaic
+	
+	is_triggered_only = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event RUS_Stalin_Putsch.5"
+	}
+	
+	option = {
+		name = RUS_Stalin_Putsch.5.A # Glory to Comrade Anpilov
+		hidden_effect = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Viktor Anpilov"
+				picture = "gfx/leaders/RUS/Viktor Anpilov.dds"
+				ideology = Hypersocialism_ideology
+				traits = { TITLE_Acting_General_Secretary SUBIDEOLOGY_Marxism_Leninism }
+			}
+			set_politics = {
+				ruling_party = Hypersocialism
+			}
+			set_cosmetic_tag = SOV_Anpilov
+			start_civil_war = {
+				ideology = Marxism_Leninism
+				states = { 213 214 397 262 398 651 652 582 573 581 572 653 580 579 403 408 409 560 644 562 637 }
+				size = 0.4
+				set_cosmetic_tag = RUS_RSR
+				save_global_event_target_as = RUS_RSR
+			}
+			save_global_event_target_as = RUS_SOV
+			create_faction = Faction_Sovintern
+			add_to_faction = RUS
+			add_to_faction = TAN
+		}
+	}
+}

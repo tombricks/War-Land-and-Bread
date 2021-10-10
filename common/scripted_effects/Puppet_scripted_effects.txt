@@ -1,0 +1,11 @@
+Puppet_Command = {
+	save_event_target_as = new_puppet
+	if = {
+		limit = {
+			FROM = { tag = RUS }
+		}
+		RUS = {
+			country_event = Puppet_Event.1
+		}
+	}
+}

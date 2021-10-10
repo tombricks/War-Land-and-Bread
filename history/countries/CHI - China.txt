@@ -33,7 +33,7 @@ create_country_leader = {
 	traits = { SUBIDEOLOGY_Mao_Zedong_Thought }
 }
 
-create_faction = "New International"
+create_faction = Faction_New_International
 add_to_faction = CHI
 add_to_faction = FRA
 add_to_faction = KOR

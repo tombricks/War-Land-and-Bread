@@ -1,0 +1,4 @@
+RSR = {
+	global_event_target = RUS_RSR
+	fallback = RUS
+}

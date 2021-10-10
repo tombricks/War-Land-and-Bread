@@ -4,8 +4,19 @@ guiTypes = {
 		position = { x = 0 y = 0}
 
 		instantTextboxType = {
+			name = "leader_title"
+			position = { x = 18 y = 54 }
+			font = "hoi_18mbs"
+			text = "[GetLeaderTitle]"
+			maxWidth = 155
+			maxHeight = 20
+			format = center
+			vertical_alignment = center
+		}
+
+		instantTextboxType = {
 			name = "subideology"
-			position = { x = 90 y = 312 }
+			position = { x = 90 y = 342 }
 			font = "hoi_18mbs"
 			text = "[GetIdeologyADJ]"
 			maxWidth = 162
@@ -16,7 +27,7 @@ guiTypes = {
 		iconType ={
 			name = "ideology_icon"
 			spriteType = "GFX_ideology_unknown"
-			position = { x= 19 y = 305 }
+			position = { x= 19 y = 335 }
 			Orientation = "UPPER_LEFT"
 		}
 

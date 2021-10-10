@@ -1,0 +1,39 @@
+﻿add_namespace = Puppet_Event
+
+country_event = {
+	id = Puppet_Event.1
+	title = Puppet_Event.1.TITLE
+	desc = Puppet_Event.1.DESC
+	picture = GFX_Country_Soviet_Army
+	is_triggered_only = yes
+	
+	option = {
+		name = Puppet_Event.1.A # Soviet Socialist Republic
+		set_autonomy = {
+			target = event_target:new_puppet
+			autonomy_state = Autonomy_Autonomous_Zone
+		}
+		event_target:new_puppet = {
+			set_cosmetic_tag = COUNTRY_Soviet_Socialist_Republic
+		}
+	}
+	
+	option = {
+		name = Puppet_Event.1.B # Military Administration
+		set_autonomy = {
+			target = event_target:new_puppet
+			autonomy_state = Autonomy_Autonomous_Zone
+		}
+		event_target:new_puppet = {
+			set_cosmetic_tag = COUNTRY_Soviet_Military_Administration
+		}
+	}
+	
+	option = {
+		name = Puppet_Event.1.C # Satellite
+		set_autonomy = {
+			target = event_target:new_puppet
+			autonomy_state = Autonomy_Satellite
+		}
+	}
+}

@@ -7,6 +7,16 @@ on_actions = {
 			}
 		}
 	}
+	on_puppet = {
+		effect = {
+			Puppet_Command = yes
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			Puppet_Command = yes
+		}
+	}
 	on_capitulation = {
 		effect = {
 			log = "Capitulation: [FROM.GetNameWithFlag] defeats [ROOT.GetNameWithFlag]"

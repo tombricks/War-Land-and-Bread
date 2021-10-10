@@ -31,17 +31,17 @@ create_country_leader = {
 	name = "Grigory Romanov"
 	picture = "gfx/leaders/RUS/Grigory Romanov.dds"
 	ideology = Marxism_Leninism_ideology
-	traits = { SUBIDEOLOGY_Marxism_Leninism }
+	traits = { TITLE_General_Secretary SUBIDEOLOGY_Marxism_Leninism }
 }
 
 create_country_leader = {
 	name = "Yevgeny Stalin"
 	picture = "gfx/leaders/RUS/Yevgeny Stalin.dds"
 	ideology = Hypersocialism_ideology
-	traits = { SUBIDEOLOGY_Stalin_Thought }
+	traits = { TITLE_General_Secretary SUBIDEOLOGY_Stalin_Thought }
 }
 
-create_faction = "United Nations"
+create_faction = Faction_United_Nations
 set_autonomy = { target = KAZ autonomy_state = Autonomy_Autonomous_Zone }
 set_autonomy = { target = UKR autonomy_state = Autonomy_Autonomous_Zone }
 set_autonomy = { target = BLR autonomy_state = Autonomy_Autonomous_Zone }

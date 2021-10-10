@@ -20,4 +20,7 @@ leader_traits = {
 	SUBIDEOLOGY_New_Marxism = {  }
 	SUBIDEOLOGY_Reformist_Socialism = {  }
 	SUBIDEOLOGY_Reactionism = {  }
+
+	TITLE_General_Secretary = {  }
+	TITLE_Acting_General_Secretary = {  }
 }

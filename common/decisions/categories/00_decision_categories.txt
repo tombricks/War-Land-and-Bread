@@ -1,3 +1,11 @@
+debug_decisions = {
+	icon = generic_research
+	visible = {
+		is_debug = yes
+		is_ai = no
+	}
+}
+
 SOM_Somali_Civil_War_Intervention = {
 	icon = generic_research
 	picture = GFX_Decision_Cat_SOM_Somali_Civil_War_Intervention

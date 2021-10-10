@@ -59,16 +59,17 @@
  SUBIDEOLOGY_Reactionism: "Reactionism"
  SUBIDEOLOGY_Reactionism_ADJ: "Reactionary"
 
-
+ TITLE_General_Secretary: "General Secretary"
+ TITLE_Acting_General_Secretary: "Acting General Secretary"
   
- RUS_Hypersocialism_party: "AUMLPIS"
- RUS_Hypersocialism_party_long: "All-Union Marxist-Leninist Party of Iosif Stalin"
- RUS_Marxism_Leninism_party: "CPSU(B)"
- RUS_Marxism_Leninism_party_long: "Communist Party of the Soviet Union (Bolshevik)"
+ RUS_Hypersocialism_party: "AUCP(b)"
+ RUS_Hypersocialism_party_long: "All-Union Communist Party (Bolsheviks)"
+ RUS_Marxism_Leninism_party: "CPSU(b)"
+ RUS_Marxism_Leninism_party_long: "Communist Party of the Soviet Union (Bolsheviks)"
  RUS_Reformist_Socialism_party: "CPSU(R)"
  RUS_Reformist_Socialism_party_long: "Communist Party of the Soviet Union (Reformist)"
- RUS_New_Marxism_party: "RCP"
- RUS_New_Marxism_party_long: "Russian Communist Party"
+ RUS_New_Marxism_party: "RCP(b)"
+ RUS_New_Marxism_party_long: "Russian Communist Party (Bolsheviks)"
  RUS_Reactionism_party: "LDPSU"
  RUS_Reactionism_party_long: "Liberal Democratic Party of the Soviet Union"
  
