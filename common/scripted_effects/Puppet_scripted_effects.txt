@@ -122,11 +122,10 @@ Random_Cosmetic = {
 }
 
 Puppet_Satellite = {
-	log = "[THIS.GetName] - [OVERLORD.GetName]"
 	if = {
 		limit = {
-			OVERLORD = { tag = RUS }
-			tag = CHI
+			is_subject_of = RUS
+			original_tag = CHI
 		}
 		set_cosmetic_tag = CHI_Provisional
 		else = {

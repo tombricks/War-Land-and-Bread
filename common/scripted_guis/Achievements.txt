@@ -1,22 +1,22 @@
-scripted_gui = {
-	Custom_Achievements = {
-		context_type = player_context
-		window_name = "Custom_Achievements_window"
-		
-		visible = {
-			always = yes
-		}
-
-		properties = {
-		}
-
-		triggers = {
-		}
-
-		effects = {
-		}
-
-		dynamic_lists = {
-		}
-	}
-}
+#scripted_gui = {
+#	Custom_Achievements = {
+#		context_type = player_context
+#		window_name = "Custom_Achievements_window"
+#		
+#		visible = {
+#			always = yes
+#		}
+#
+#		properties = {
+#		}
+#
+#		triggers = {
+#		}
+#
+#		effects = {
+#		}
+#
+#		dynamic_lists = {
+#		}
+#	}
+#}
