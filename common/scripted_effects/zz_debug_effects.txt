@@ -114,3 +114,55 @@ d_gib_steel = {
 		state = capital
 	}
 }
+
+d_conker ={
+	ROOT = {
+		transfer_units_fraction = {
+			target = ZZZ
+			size = 1.0
+			stockpile_ratio = 0.8
+			army_ratio = 1.0
+			navy_ratio = 1.0
+			air_ratio = 1.0
+
+			keep_unit_leaders_trigger = {
+				always = yes
+			}
+		}
+		every_state = {
+			limit = {
+				is_controlled_by = PREV
+			}
+			FROM = {
+				set_state_controller = PREV
+			}
+		}
+	}
+}
+
+d_create_units = {
+	FROM = {
+		division_template = {
+			name = "Console Unit"
+			priority = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+			}
+		}
+	}
+
+	set_temp_variable = { i = 0 }
+	while_loop_effect = {
+		limit = { check_variable = { i < args^0 } }
+		ROOT = {
+			create_unit = {
+				division = "name = \"Console Unit\" division_template = \"Console Unit\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = FROM
+			}
+		}
+		add_to_temp_variable = { i = 1 }
+	}
+}

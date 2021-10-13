@@ -1,0 +1,50 @@
+puppet_decisions = {
+	Create_Puppet_Alt = {
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				exists = yes
+				NOT = { is_subject_of = ROOT }
+			}
+			any_controlled_state = {
+				is_core_of = FROM
+			}
+		}
+
+		available = {
+			NOT = {
+				any_country = {
+					original_tag = FROM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				create_dynamic_country = {
+					original_tag = FROM
+					every_state = {
+						limit = {
+							is_core_of = PREV
+							is_controlled_by = ROOT
+						}
+						PREV = {
+							transfer_state = PREV
+						}
+					}
+					ROOT = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_satellite
+						}
+					}
+					Random_Cosmetic = yes
+				}
+			}
+		}
+	}
+}

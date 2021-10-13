@@ -9,31 +9,43 @@ country_event = {
 	
 	option = {
 		name = Puppet_Event.1.A # Soviet Socialist Republic
-		set_autonomy = {
-			target = event_target:new_puppet
-			autonomy_state = Autonomy_Autonomous_Zone
-		}
 		event_target:new_puppet = {
-			set_cosmetic_tag = COUNTRY_Soviet_Socialist_Republic
+			Puppet_Drop_Military = yes
+			PREV = {
+				set_autonomy = {
+					target = PREV
+					autonomy_state = Autonomy_Autonomous_Zone
+				}
+			}
+			Puppet_Autonomous_Cosmetic = yes
 		}
 	}
 	
 	option = {
 		name = Puppet_Event.1.B # Military Administration
-		set_autonomy = {
-			target = event_target:new_puppet
-			autonomy_state = Autonomy_Autonomous_Zone
-		}
 		event_target:new_puppet = {
-			set_cosmetic_tag = COUNTRY_Soviet_Military_Administration
+			Puppet_Drop_Military = yes
+			PREV = {
+				set_autonomy = {
+					target = PREV
+					autonomy_state = Autonomy_Autonomous_Zone
+				}
+			}
+			Puppet_Gain_Military = yes
 		}
 	}
 	
 	option = {
 		name = Puppet_Event.1.C # Satellite
-		set_autonomy = {
-			target = event_target:new_puppet
-			autonomy_state = Autonomy_Satellite
+		event_target:new_puppet = {
+			Puppet_Drop_Military = yes
+			PREV = {
+				set_autonomy = {
+					target = PREV
+					autonomy_state = autonomy_satellite
+				}
+			}
+			Random_Cosmetic = yes
 		}
 	}
 }

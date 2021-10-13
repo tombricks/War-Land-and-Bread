@@ -55,3 +55,4 @@
  CONSTRUCTION_INFO_MASTER:0 "This construction is built on the $WHO|H$ territory. If we don't use all factories, they can contribute using theirs."
  CONSTRUCTION_INFO_SUBJECT:0 "This construction is built for us by the $WHO|H$. If they don't use all factories, we can contribute using ours."
  
+ Create_Puppet_Alt: "Establish a Rival Government to [FROM.GetNameDef]"

@@ -20,3 +20,10 @@ SOM_Somali_Civil_War_Intervention = {
 	}
 	visible_when_empty = yes
 }
+
+puppet_decisions = {
+	icon = generic_research
+	visible = {
+		is_subject = no
+	}
+}

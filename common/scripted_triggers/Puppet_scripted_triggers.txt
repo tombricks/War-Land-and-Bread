@@ -1,0 +1,7 @@
+Puppet_Is_Military = {
+	OR = {
+		has_cosmetic_tag = COUNTRY_Occupation_Zone
+		has_cosmetic_tag = COUNTRY_Military_Administration
+		has_cosmetic_tag = COUNTRY_Soviet_Military_Administration
+	}
+}

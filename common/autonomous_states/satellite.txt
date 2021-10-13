@@ -2,8 +2,13 @@ autonomy_state = {
 	id = autonomy_satellite
 	
 	min_freedom_level = 0.8
+	default = yes
 	
 	manpower_influence = 0.9
+
+	allowed = {
+		always = yes
+	}
 	
 	rule = {
 		can_not_declare_war = yes

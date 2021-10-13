@@ -7,17 +7,40 @@ on_actions = {
 			}
 		}
 	}
-	on_puppet = {
+	on_puppet = { # Yes
 		effect = {
+			log = "Puppeted: [ROOT.GetNameWithFlag] ([ROOT.GetTag])"
+			Puppet_Gain_Military = yes
 			Puppet_Command = yes
 		}
 	}
-	on_release_as_puppet = {
+	on_release_as_puppet = { # Yes
 		effect = {
+			log = "Released as Puppet: [ROOT.GetNameWithFlag] ([ROOT.GetTag])"
 			Puppet_Command = yes
 		}
 	}
-	on_capitulation = {
+	on_annex = { # Yes
+		effect = {
+			log = "Annexed: [FROM.GetNameWithFlag] ([FROM.GetTag])"
+			FROM = {
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	on_liberate = {
+		effect = {
+			log = "Liberated: [ROOT.GetNameWithFlag] ([ROOT.GetTag])"
+			Random_Cosmetic = yes
+		}
+	}
+	on_release_as_free = { # No
+		effect = {
+			log = "Released as free: [ROOT.GetNameWithFlag] ([ROOT.GetTag])"
+			Random_Cosmetic = yes
+		}
+	}
+	on_capitulation = { # Yes
 		effect = {
 			log = "Capitulation: [FROM.GetNameWithFlag] defeats [ROOT.GetNameWithFlag]"
 		}

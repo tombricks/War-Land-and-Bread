@@ -12,4 +12,26 @@ debug_decisions = {
 		
 		fire_only_once = yes
 	}
+
+	france_get_germany = {
+		allowed = {
+			always = yes
+		}
+
+		complete_effect = {
+			GER = {
+				create_dynamic_country = {
+					original_tag = GER
+					FRA = {
+						release_puppet_on_controlled = PREV
+						set_autonomy = {
+							target = PREV
+							autonomy_state = Autonomy_Autonomous_Zone
+						}
+					}
+					Puppet_Gain_Military = yes
+				}
+			}
+		}
+	}
 }

@@ -2,10 +2,15 @@ autonomy_state = {
 	id = Autonomy_Autonomous_Zone
 	
 	use_overlord_color = yes
+	default = no
 
 	min_freedom_level = 0.2
 	
 	manpower_influence = 0.9
+
+	allowed = {
+		always = yes
+	}
 	
 	rule = {
 		can_not_declare_war = yes

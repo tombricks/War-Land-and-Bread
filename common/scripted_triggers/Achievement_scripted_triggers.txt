@@ -1,0 +1,59 @@
+Achievement_A_Union_of_Unions = {
+	if = {
+		limit = {
+			tag = UAR
+		}
+		LBA = {
+			is_subject_of = UAR
+		}
+		else_if = {
+			limit = {
+				tag = LBA
+			}
+			UAR = {
+				is_subject_of = LBA
+			}
+		}
+	}
+}
+Achievement_Direct_Rule_to_Moscow = {
+	OR = {
+		tag = FIN
+		tag = EST
+		tag = LAT
+		tag = LIT
+		tag = BLR
+		tag = UKR
+		tag = MOL
+		tag = GEO
+		tag = ARM
+		tag = AZR
+		tag = KAZ
+		tag = UZB
+		tag = KYR
+		tag = UZB
+		tag = TKM
+		tag = TAN
+	}
+	controls_state = 219
+}
+Achievement_Looks_Whos_Back = {
+	tag = GER
+	has_government = Reactionism
+}
+Achievement_Hugeoslavia = {
+	tag = YUG
+	all_state = {
+		if = {
+			limit = {
+				OR = {
+					is_core_of = YUG
+					is_core_of = ALB
+					is_core_of = ROM
+					is_core_of = ZAP
+				}
+			}
+			is_controlled_by = YUG
+		}
+	}
+}
