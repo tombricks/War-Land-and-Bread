@@ -13,7 +13,8 @@ state = {
 		victory_points = { 7408 10 }
 		victory_points = { 1488 1 }
 		victory_points = { 10438 1 }
-		owner = ZZZ
+		owner = THA
+		add_core_of = THA
 		
 		buildings = {infrastructure = 3 arms_factory = 1 industrial_complex = 5 air_base = 3 7408 = { naval_base = 3 } } 
 		add_extra_state_shared_building_slots = 2

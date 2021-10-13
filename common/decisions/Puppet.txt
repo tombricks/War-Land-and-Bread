@@ -23,6 +23,22 @@ puppet_decisions = {
 			}
 		}
 
+		ai_will_do = {
+			base = 0
+			
+			modifier = {
+				add = 10
+				tag = RUS
+				FROM = { tag = CHI }
+				controls_state = 761
+				controls_state = 714
+				controls_state = 715
+				controls_state = 716
+				controls_state = 328
+				controls_state = 717
+			}
+		}
+
 		complete_effect = {
 			FROM = {
 				create_dynamic_country = {
@@ -42,7 +58,7 @@ puppet_decisions = {
 							autonomy_state = autonomy_satellite
 						}
 					}
-					Random_Cosmetic = yes
+					Puppet_Satellite = yes
 				}
 			}
 		}

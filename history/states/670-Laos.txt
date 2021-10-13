@@ -11,7 +11,8 @@ state = {
 
 	history = {
 		victory_points = { 1464 1 }
-		owner = ZZZ
+		owner = LAO
+		add_core_of = LAO
 		
 		buildings = {infrastructure = 2 } 
 	}

@@ -1,0 +1,35 @@
+﻿add_namespace = OCC_Revolution
+
+# Révolution occitane
+country_event = {
+	id = OCC_Revolution.1
+	title = OCC_Revolution.1.TITLE
+	desc = OCC_Revolution.1.DESC
+	picture = GFX_Country_Romanov_Gone
+	
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: Event OCC_Revolution.1" }
+	
+	option = {
+		name = OCC_Revolution.1.A
+		OCC = {
+			transfer_units_fraction = {
+				target = FRA
+				size = 0.75
+				stockpile_ratio = 0.4
+				army_ratio = 0.65
+				navy_ratio = 0.2
+				air_ratio = 0.375
+			}
+			set_politics = {
+				ruling_party = Marxism_Leninism
+			}
+		}
+		FRA = {
+			declare_war_on = {
+				target = OCC
+				type = annex_everything
+			}
+		}
+	}
+}

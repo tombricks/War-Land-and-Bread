@@ -522,3 +522,23 @@ NGL = {
 	color = rgb { 127 51 63 }
 	color_ui = rgb { 127 51 63 }
 }
+BRM = {
+	color = rgb { 65 75 159 }
+	color_ui = rgb { 65 75 159 }
+}
+VIN = {
+	color = rgb { 218 78 76 }
+	color_ui = rgb { 218 78 76 }
+}
+CAM = {
+	color = rgb { 216 45 188 }
+	color_ui = rgb { 216 45 188 }
+}
+LAO = {
+	color = rgb { 183 60 48 }
+	color_ui = rgb { 183 60 48 }
+}
+THA = {
+	color = rgb { 156 163 149 }
+	color_ui = rgb { 156 163 149 }
+}

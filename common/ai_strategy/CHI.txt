@@ -1,29 +1,29 @@
-RUS_CHI_Cold_War = {
+CHI_RUS_Cold_War = {
 	allowed = {
-		tag = RUS
+		tag = CHI
 	}
 	enable = {
-		country_exists = CHI
-		NOT = { is_ally_with = CHI }
+		country_exists = RUS
+		NOT = { is_ally_with = RUS }
 	}
 
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = prepare_for_war
-		id = CHI
+		id = RUS
 		value = 150
 	}
 
 	ai_strategy = {
 		type = contain
-		id = CHI
+		id = RUS
 		value = 150
 	}
 
 	ai_strategy = {
 		type = antagonize
-		id = CHI
+		id = RUS
 		value = 150
 	}
 
@@ -46,47 +46,34 @@ RUS_CHI_Cold_War = {
 	}
 }
 
-RUS_UN_Dont_Leave = {
-	enable = {
-		is_in_faction_with = RUS
-	}
-
-	ai_strategy = {
-		type = diplo_action_desire
-		id = "RUS"
-		target = LEAVE_FACTION
-		value = -150
-	}
-}
-
-Marxist_Leninists_join_RUS = {
+New_Marxists_join_CHI = {
 	allowed = {
 		always = yes
 	}
 
 	enable = {
-		has_government = Marxism_Leninism
+		has_government = New_Marxism
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = befriend
-		id = RUS
+		id = CHI
 		value = 250
 	}
 }
 
-RUS_Send_Volunteers_to_Civil_War = {
+CHI_Send_Volunteers_to_Civil_War = {
 	reversed = yes
 
 	enable = {
-		has_government = Marxism_Leninism
+		has_government = New_Marxism
 		has_civil_war = yes
 	}
 
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = RUS
+		id = CHI
 		value = 150
 	}
 }

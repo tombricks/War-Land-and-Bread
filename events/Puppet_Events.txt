@@ -45,7 +45,7 @@ country_event = {
 					autonomy_state = autonomy_satellite
 				}
 			}
-			Random_Cosmetic = yes
+			Puppet_Satellite = yes
 		}
 	}
 }

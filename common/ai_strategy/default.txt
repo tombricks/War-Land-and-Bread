@@ -463,7 +463,6 @@ default_pp_spend_amount = {
 
 default_paratroopers_production = {
 	enable = {
-		NOT = { original_tag = GER }
 		ai_wants_divisions >  12 #Massively decreasing the amount of paratroopers the AI wants
 	}
 	abort = {
@@ -503,7 +502,6 @@ default_garrison_production = {
 
 default_mountaineers_production = {
 	enable = {
-		NOT = { original_tag = GER }
 		ai_wants_divisions > 11 #Decreasing the amount of mountaineers the AI wants
 	}
 	abort = {
@@ -519,7 +517,6 @@ default_mountaineers_production = {
 
 default_marines_production = {
 	enable = {
-		NOT = { original_tag = GER }
 		ai_wants_divisions > 49
 	}
 	abort = {
@@ -541,7 +538,6 @@ default_marines_production = {
 
 default_mobile_production = {
 	enable = {
-		NOT = { original_tag = GER }
 		ai_wants_divisions > 11
 		has_tech = motorised_infantry
 	}
@@ -558,8 +554,6 @@ default_mobile_production = {
 
 default_armored_production = {
 	enable = {
-		NOT = { original_tag = GER }
-		not = { original_tag = CZE }
 		ai_wants_divisions > 49
 	}
 	abort = {
@@ -581,7 +575,6 @@ default_armored_production = {
 
 highered_armored_production = {
 	enable = {
-		NOT = { original_tag = GER }
 		num_of_military_factories > 69
 	}
 	abort = {
@@ -656,8 +649,6 @@ more_naval_focused_nation = {
 
 default_area_priority = {
 	enable = {
-		NOT = { original_tag = GER } 
-		NOT = { original_tag = FRA }
 	}
 
 	ai_strategy = {
@@ -714,27 +705,6 @@ default_area_priority = {
 		value = 80
 	}
 
-}
-
-default_area_priority_non_africa = {
-	enable = {
-		NOT = { original_tag = ITA }
-		NOT = { original_tag = FRA }
-		NOT = { original_tag = ENG }
-		NOT = { is_subject_of = ENG }
-		NOT = { capital_scope = { is_on_continent = africa } }
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = africa
-		value = -90
-	}
-	ai_strategy = {
-		type = area_priority
-		id = suez
-		value = -90
-	}
 }
 
 default_stockpile_management = {
@@ -1105,13 +1075,12 @@ minors_dont_spy = {
 		value = -10
 	}
 }
-build_fucking_armies = {
-	enable = {
-		always = yes
-	}
+build_army = {
+	allowed = { always = yes }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
 
-	ai_strategy = {
-		type = force_build_armies
-		value = 100
-	}
+	ai_strategy = { type = build_army id = motorized value = 200 }
+	ai_strategy = { type = build_army id = infantry value = 180 }
+	ai_strategy = { type = force_build_armies value = 300 }
 }

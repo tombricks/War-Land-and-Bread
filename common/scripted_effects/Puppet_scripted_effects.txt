@@ -70,6 +70,16 @@ Random_Cosmetic = {
 				is_subject = no
 			}
 			set_country_flag = temp_sub
+			
+			if = {
+				limit = {
+					is_in_faction = yes
+				}
+				faction_leader = {
+					add_to_faction = ZZZ
+				}
+			}
+			
 			ZZZ = {
 				set_autonomy = {
 					target = PREV
@@ -105,7 +115,22 @@ Random_Cosmetic = {
 					target = PREV
 					autonomy_state = autonomy_free
 				}
+				leave_faction = yes
 			}
+		}
+	}
+}
+
+Puppet_Satellite = {
+	log = "[THIS.GetName] - [OVERLORD.GetName]"
+	if = {
+		limit = {
+			OVERLORD = { tag = RUS }
+			tag = CHI
+		}
+		set_cosmetic_tag = CHI_Provisional
+		else = {
+			Random_Cosmetic = yes
 		}
 	}
 }

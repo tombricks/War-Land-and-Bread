@@ -166,3 +166,27 @@ d_create_units = {
 		add_to_temp_variable = { i = 1 }
 	}
 }
+
+d_create_fake_units = {
+	FROM = {
+		division_template = {
+			name = "Fake Unit"
+			priority = 0
+			regiments = {
+				fake_intel_unit = { x = 0 y = 0 }
+			}
+		}
+	}
+
+	set_temp_variable = { i = 0 }
+	while_loop_effect = {
+		limit = { check_variable = { i < args^0 } }
+		ROOT = {
+			create_unit = {
+				division = "name = \"Fake Unit\" division_template = \"Fake Unit\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = FROM
+			}
+		}
+		add_to_temp_variable = { i = 1 }
+	}
+}
