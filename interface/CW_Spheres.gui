@@ -1,7 +1,7 @@
 guiTypes = {
 
 	containerWindowType = {
-		name = "CW_Spheres_window"
+		name = "Spheres_window"
 		position = { x = -350 y = -300 }
 		size = { width = 744 height = 664 }
 		orientation= center
@@ -30,43 +30,74 @@ guiTypes = {
 			name = "spheres_grid"
 			position = { x = 12 y = 48 }
 			size = { width = 720 height = 100%% }
-			slotsize = { width = 720 height = 80 }
+			slotsize = { width = 720 height = 160 }
 			add_horizontal = no
 			format = "UPPER_LEFT"
 		}
 	}
 
 	containerWindowType = {
-		name = "CW_Spheres_Entry"
-		size = { width = 720 height = 80 }
-		
-		background = {
-			name = "Background"	
-			quadTextureSprite = "GFX_tiled_plain_bg_small"
-		}
-
-		iconType = {
-			name = "Leader_Flag"
-			spriteType = "GFX_shield_medium"
-			centerposition = yes
-			position = { x = 60 y = 40 }
-		}
+		name = "Spheres_Entry"
+		size = { width = 720 height = 160 }	
 
 		containerWindowType = {
-			name = "CW_Spheres_List"
-			position = { x = 120 y = 0 }
-			size = { width = 100%% height = 100%% }
+			name = "Title_Bar"
+			position = { x = 0 y = -2 }
+			size = { width = 100%% height = 52 }
 		
 			background = {
 				name = "Background"	
-				quadTextureSprite = "GFX_tiled_plain_bg_small"
+				quadTextureSprite = "GFX_mini_tooltip"
+			}		
+		
+			instantTextBoxType = {
+				name = "Title"
+				position = { x = 0 y = 8 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "[This.GetAdjective] Sphere"	
+				maxWidth = 720
+				maxHeight = 32
+				format = centre
 			}
+		}
+
+		containerWindowType = {
+			name = "Leader"
+			position = { x = 0 y = 42 } 
+			size = { width = 120 height = 120 }
+		
+			background = {
+				name = "Background"	
+				quadTextureSprite = "GFX_tiled_window"
+			}		
+
+			iconType = {
+				name = "Leader_Flag"
+				spriteType = "GFX_shield_medium"
+				centerposition = yes
+				position = { x = 60 y = 60 }
+			}
+		}
+
+		containerWindowType = {
+			name = "Spheres_List"
+			position = { x = 112 y = 43 }
+			size = { width = 606 height = 118 }
+			margin = { top = 12 left = 12 bottom = 12 right = 12 }
+			verticalScrollbar = "right_vertical_slider"
+		
+			background = {
+				name = "Background"	
+				quadTextureSprite = "GFX_tiled_window2_1b_border"
+			}	
 		
 			gridboxtype = {
 				name = "spheres_list"
-				position = { x = 24 y = 32 }
+				position = { x = 8 y = 8 }
 				size = { width = 48 height = 26 }
-				slotsize = { width = 48 height = 26 }
+				slotsize = { width = 50 height = 34 }
+				max_slots_horizontal = 11
 				add_horizontal = yes
 				format = "UPPER_LEFT"
 			}
@@ -74,11 +105,11 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "CW_Spheres_List_Entry"
+		name = "Spheres_List_Entry"
 		size = { width = 41 height = 26 }
 
-		iconType = {
-			name = "Leader_Flag"
+		buttonType = {
+			name = "Entry_Flag"
 			spriteType = "GFX_flag_small2"
 			position = { x = 0 y = 0 }
 		}

@@ -30,7 +30,7 @@ CHI_RUS_Cold_War = {
 	ai_strategy = {
 		type = force_defend_ally_borders
 		target = europe
-		value = 100
+		value = 1000
 	}
 
 	ai_strategy = {

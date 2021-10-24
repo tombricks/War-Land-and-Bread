@@ -640,6 +640,18 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = {
+		limit = {
+			any_country = {
+				has_war_with = FROM
+				is_in_array = { ROOT.Sphere = THIS }
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_VOLUNTEERS_BLOCKED_SPHERE_TT
+			always = no
+		}
+	}
 }
 DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
 	if = {

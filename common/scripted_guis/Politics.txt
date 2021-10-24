@@ -28,5 +28,43 @@ scripted_gui = {
 				image = "[GetIdeologyIcon]"
 			}
 		}
+
+	}
+	Diplomatic_Sphere_Scripted_GUI = {
+		context_type = selected_country_context
+		window_name = "Diplomatic_Sphere_Scripted_GUI_window"
+		parent_window_token = selected_country_view_diplomacy
+
+		visible = {
+			FROM = {
+				has_variable = Sphere_Leader
+			}
+		}
+
+		effects = {
+			Entry_Flag_click = {
+				var:member = {
+					capital_scope = {
+						root = {
+							goto_state = PREV
+						}
+					}
+				}
+			}
+		}
+
+		properties = {
+			Entry_Flag = {
+				image = "[?member.GetFlag]"
+			}
+		}
+
+		dynamic_lists = {
+			spheres_list = {
+				array = SFL.Sphere
+				entry_container = Spheres_Diplo_List_Entry
+				value = member
+			}
+		}
 	}
 }

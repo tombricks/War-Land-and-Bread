@@ -65,6 +65,7 @@
  SOV_Anpilov_Reformist_Socialism_ADJ: "Soviet"
  SOV_Anpilov_Reformist_Socialism_DEF: "The Union of Soviet Socialist Republics"
 
+
  RUS_RSR_Hypersocialism: "Russian Soviet Republic"
  RUS_RSR_Hypersocialism_ADJ: "Russian"
  RUS_RSR_Hypersocialism_DEF: "The Russian Soviet Republic"
@@ -77,6 +78,7 @@
  RUS_RSR_Reformist_Socialism: "Russian Soviet Republic"
  RUS_RSR_Reformist_Socialism_ADJ: "Russian"
  RUS_RSR_Reformist_Socialism_DEF: "The Russian Soviet Republic"
+
 
  ETH_DERG_Hypersocialism: "Provisional Military Government of Socialist Ethiopia"
  ETH_DERG_Hypersocialism_ADJ: "Ethiopian"
@@ -104,3 +106,17 @@
  CHI_Provisional_Reformist_Socialism: "Chinese Second Soviet Republic"
  CHI_Provisional_Reformist_Socialism_ADJ: "Chinese"
  CHI_Provisional_Reformist_Socialism_DEF: "The Chinese Second Soviet Republic"
+
+
+ GER_FDJ_Hypersocialism: "Free German Movement"
+ GER_FDJ_Hypersocialism_ADJ: "German"
+ GER_FDJ_Hypersocialism_DEF: "The Free German Movement"
+ GER_FDJ_Marxism_Leninism: "Free German Movement"
+ GER_FDJ_Marxism_Leninism_ADJ: "German"
+ GER_FDJ_Marxism_Leninism_DEF: "The Free German Movement"
+ GER_FDJ_New_Marxism: "Free German Movement"
+ GER_FDJ_New_Marxism_ADJ: "German"
+ GER_FDJ_New_Marxism_DEF: "The Free German Movement"
+ GER_FDJ_Reformist_Socialism: "Free German Movement"
+ GER_FDJ_Reformist_Socialism_ADJ: "German"
+ GER_FDJ_Reformist_Socialism_DEF: "The Free German Movement"

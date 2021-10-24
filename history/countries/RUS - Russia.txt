@@ -140,34 +140,54 @@ add_to_faction = LUX
 add_to_faction = BEL
 add_to_faction = ITA
 add_to_faction = SPA
+add_to_faction = POR
+add_to_faction = BAS
+add_to_faction = CAT
 add_to_faction = DEN
 add_to_faction = NOR
 add_to_faction = SWE
 add_to_faction = ENG
-add_to_faction = SPA
 add_to_faction = MON
 add_to_faction = USA
 add_to_faction = TUR
 
-add_to_array = { Global.CW_Sphere_Leaders = RUS }
-add_to_array = { CW_Sphere = RUS }
-add_to_array = { CW_Sphere = ZAP }
-add_to_array = { CW_Sphere = GER }
-add_to_array = { CW_Sphere = HUN }
-add_to_array = { CW_Sphere = ROM }
-add_to_array = { CW_Sphere = OCC }
-add_to_array = { CW_Sphere = HOL }
-add_to_array = { CW_Sphere = LUX }
-add_to_array = { CW_Sphere = BEL }
-add_to_array = { CW_Sphere = ITA }
-add_to_array = { CW_Sphere = SPA }
-add_to_array = { CW_Sphere = DEN }
-add_to_array = { CW_Sphere = NOR }
-add_to_array = { CW_Sphere = SWE }
-add_to_array = { CW_Sphere = ENG }
-add_to_array = { CW_Sphere = SPA }
-add_to_array = { CW_Sphere = MON }
-add_to_array = { CW_Sphere = USA }
-add_to_array = { CW_Sphere = TUR }
-
-activate_mission = SOM_Intervention_RUS_Mission
+add_to_array = { Global.Sphere_Leaders = RUS }
+set_variable = { Sphere_Leader = RUS }
+set_variable = { Added_to_Sphere = KAZ } Sphere_Update = yes
+set_variable = { Added_to_Sphere = UKR } Sphere_Update = yes
+set_variable = { Added_to_Sphere = BLR } Sphere_Update = yes
+set_variable = { Added_to_Sphere = LIT } Sphere_Update = yes
+set_variable = { Added_to_Sphere = LAT } Sphere_Update = yes
+set_variable = { Added_to_Sphere = EST } Sphere_Update = yes
+set_variable = { Added_to_Sphere = FIN } Sphere_Update = yes
+set_variable = { Added_to_Sphere = UZB } Sphere_Update = yes
+set_variable = { Added_to_Sphere = TKM } Sphere_Update = yes
+set_variable = { Added_to_Sphere = TAJ } Sphere_Update = yes
+set_variable = { Added_to_Sphere = KYR } Sphere_Update = yes
+set_variable = { Added_to_Sphere = GEO } Sphere_Update = yes
+set_variable = { Added_to_Sphere = ARM } Sphere_Update = yes
+set_variable = { Added_to_Sphere = AZR } Sphere_Update = yes
+set_variable = { Added_to_Sphere = TAN } Sphere_Update = yes
+set_variable = { Added_to_Sphere = MOL } Sphere_Update = yes
+set_variable = { Added_to_Sphere = ZAP } Sphere_Update = yes
+set_variable = { Added_to_Sphere = GER } Sphere_Update = yes
+set_variable = { Added_to_Sphere = HUN } Sphere_Update = yes
+set_variable = { Added_to_Sphere = ROM } Sphere_Update = yes
+set_variable = { Added_to_Sphere = OCC } Sphere_Update = yes
+set_variable = { Added_to_Sphere = HOL } Sphere_Update = yes
+set_variable = { Added_to_Sphere = LUX } Sphere_Update = yes
+set_variable = { Added_to_Sphere = BEL } Sphere_Update = yes
+set_variable = { Added_to_Sphere = ITA } Sphere_Update = yes
+set_variable = { Added_to_Sphere = DEN } Sphere_Update = yes
+set_variable = { Added_to_Sphere = NOR } Sphere_Update = yes
+set_variable = { Added_to_Sphere = SWE } Sphere_Update = yes
+set_variable = { Added_to_Sphere = ENG } Sphere_Update = yes
+set_variable = { Added_to_Sphere = SPA } Sphere_Update = yes
+set_variable = { Added_to_Sphere = POR } Sphere_Update = yes
+set_variable = { Added_to_Sphere = BAS } Sphere_Update = yes
+set_variable = { Added_to_Sphere = CAT } Sphere_Update = yes
+set_variable = { Added_to_Sphere = MON } Sphere_Update = yes
+set_variable = { Added_to_Sphere = USA } Sphere_Update = yes
+set_variable = { Added_to_Sphere = TUR } Sphere_Update = Yes
+set_variable = { Added_to_Sphere = SOM } Sphere_Update = yes
+SOM = { Friendship_Treaty_with_PREV = yes }

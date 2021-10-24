@@ -1094,8 +1094,11 @@ opinion_modifiers = {
 		value = 30
 	}
 
-	
 	RUS_Anpilov_Coup = {
 		value = -175
+	}
+
+	Friendship_Treaty = {
+		value = 50
 	}
 }

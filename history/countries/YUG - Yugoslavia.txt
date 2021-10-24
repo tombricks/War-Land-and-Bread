@@ -32,3 +32,14 @@ create_country_leader = {
 	ideology = Reformist_Socialism_ideology
 	traits = { SUBIDEOLOGY_Market_Socialism }
 }
+
+add_opinion_modifier = {
+	target = RUS
+	modifier = large_decrease
+}
+reverse_add_opinion_modifier = {
+	target = RUS
+	modifier = large_decrease
+}
+
+GRE = { Friendship_Treaty_with_PREV = yes }

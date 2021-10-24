@@ -30,7 +30,7 @@ RUS_CHI_Cold_War = {
 	ai_strategy = {
 		type = force_defend_ally_borders
 		target = europe
-		value = 100
+		value = 300
 	}
 
 	ai_strategy = {
@@ -80,7 +80,22 @@ RUS_Send_Volunteers_to_Civil_War = {
 	reversed = yes
 
 	enable = {
-		has_government = Marxism_Leninism
+		OR = {
+			has_government = Marxism_Leninism
+			AND = {
+				any_country = {
+					civilwar_target = PREV
+					has_government = New_Marxism
+				}
+				NOT = {
+					any_country = {
+						civilwar_target = PREV
+						has_government = Marxism_Leninism
+					}
+				}
+			}
+			is_in_array = { RUS.Sphere = THIS }
+		}
 		has_civil_war = yes
 	}
 
@@ -88,5 +103,33 @@ RUS_Send_Volunteers_to_Civil_War = {
 		type = send_volunteers_desire
 		id = RUS
 		value = 150
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = RUS
+		value = 50
+	}
+}
+RUS_Send_Volunteers_to_War = {
+	reversed = yes
+
+	enable = {
+		has_government = Marxism_Leninism
+		has_war = yes
+		OR = {
+			has_defensive_war = yes
+			is_in_array = { RUS.Sphere = THIS }
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RUS
+		value = 150
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = RUS
+		value = 50
 	}
 }

@@ -1,7 +1,7 @@
 scripted_gui = {
-	CW_Spheres = {
+	Spheres = {
 		context_type = player_context
-		window_name = "CW_Spheres_window"
+		window_name = "Spheres_window"
 		
 		visible = {
 			always = no
@@ -9,7 +9,10 @@ scripted_gui = {
 
 		properties = {
 			Leader_Flag = {
-				image = "[?v.GetFlag]"
+				image = "[?leader.GetFlag]"
+			}
+			Entry_Flag = {
+				image = "[?member.GetFlag]"
 			}
 		}
 
@@ -21,13 +24,15 @@ scripted_gui = {
 
 		dynamic_lists = {
 			spheres_grid = {
-				array = Global.CW_Sphere_Leaders
-				entry_container = CW_Spheres_Entry
+				array = Global.Sphere_Leaders
+				entry_container = Spheres_Entry
 				change_scope = yes
+				value = leader
 			}
 			spheres_list = {
-				array = CW_Sphere
-				entry_container = CW_Spheres_List_Entry
+				array = Sphere
+				entry_container = Spheres_List_Entry
+				value = member
 			}
 		}
 	}

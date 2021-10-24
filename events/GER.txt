@@ -1,0 +1,47 @@
+﻿add_namespace = GER_FDJ
+
+# FDJ Revolt
+country_event = {
+	id = GER_FDJ.1
+	title = GER_FDJ.1.TITLE
+	desc = GER_FDJ.1.DESC
+	picture = GFX_Country_Romanov_Gone
+	
+	is_triggered_only = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event GER_FDJ.1"
+		hidden_effect = {
+			set_country_flag = Left_Faction_for_War
+			leave_faction = yes
+			FDJ = {
+				transfer_state = 65
+				transfer_state = 64
+				transfer_state = 60
+				transfer_state = 62
+				transfer_state = 61
+				transfer_state = 58
+				transfer_state = 59
+				transfer_state = 60
+			}
+			transfer_units_fraction = {
+				target = FDJ
+				size = 0.4
+			}
+			declare_war_on = {
+				target = FDJ
+				type = civil_war
+			}
+			add_civil_war_target = FDJ
+			country_lock_all_division_template = yes
+		}
+	}
+	
+	option = {
+		name = GER_FDJ.1.A
+	}
+	
+	option = {
+		name = GER_FDJ.1.A
+		FDJ = { change_tag_from = GER }
+	}
+}

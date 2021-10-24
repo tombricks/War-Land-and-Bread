@@ -116,5 +116,6 @@ defined_text = {
 	name = GetLeaderTitle
 	text = { trigger = { has_country_leader_with_trait = TITLE_General_Secretary } localization_key = TITLE_General_Secretary }
 	text = { trigger = { has_country_leader_with_trait = TITLE_Acting_General_Secretary } localization_key = TITLE_Acting_General_Secretary }
+	text = { trigger = { has_country_leader_with_trait = TITLE_Chairwoman } localization_key = TITLE_Chairwoman }
 	text = { localization_key = "Comrade" }
 }

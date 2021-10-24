@@ -349,7 +349,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "relations_info"
-				position = { x = 11 y = 355 }
+				position = { x = 11 y = 429 }
 				size = { width = 268 height = -50 }
 				margin = { top = 8 bottom = 8}	
 				
@@ -373,7 +373,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "diplomatic_actions"
-				position = { x = 272 y = 355 }
+				position = { x = 272 y = 429 }
 				size = { width = 265 height = -50 }
 				verticalScrollbar = "right_vertical_slider"
 				

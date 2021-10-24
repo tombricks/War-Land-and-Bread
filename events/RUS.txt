@@ -76,6 +76,19 @@ news_event = {
 					modifier = RUS_Anpilov_Coup
 				}
 			}
+			for_each_loop = {
+				array = RUS.Sphere
+				add_to_array = { Temp_Sphere = v }
+			}
+			for_each_scope_loop = {
+				array = PREV.Temp_Sphere
+				log = "USSA-USSR UN thing: [THIS.GetName]"
+				set_variable = { Sphere_Leader = USA }
+				USA = { set_variable = { Added_to_Sphere = PREV } Sphere_Update = yes }
+				remove_from_array = { RUS.Sphere = THIS }
+			}
+			add_to_array = { Global.Sphere_Leaders = USA }
+			clear_array = Temp_Sphere
 		}
 	}
 	

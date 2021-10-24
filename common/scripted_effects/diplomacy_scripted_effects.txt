@@ -1,0 +1,130 @@
+AI_War_against_PREV = {
+    add_ai_strategy = {
+        type = declare_war
+        id = PREV
+        value = 2500
+    }
+
+    add_ai_strategy = {
+        type = prepare_for_war
+        id = PREV
+        value = 2500
+    }
+
+    add_ai_strategy = {
+        type = conquer
+        id = PREV
+        value = 2500
+    }
+    
+    add_ai_strategy = {
+        type = invade
+        id = PREV
+        value = 2500
+    }
+    
+    add_ai_strategy = {
+        type = antagonize
+        id = PREV
+        value = 2500
+    }
+}
+
+Friendship_Treaty_with_PREV = {
+	diplomatic_relation = {
+		country  = PREV
+		relation = non_aggression_pact
+		active = yes
+	}
+	PREV = {
+		diplomatic_relation = {
+			country  = PREV
+			relation = military_access
+			active = yes
+		}
+	}
+	add_opinion_modifier = {
+		target = PREV
+		modifier = Friendship_Treaty
+	}
+	reverse_add_opinion_modifier = {
+		target = PREV
+		modifier = Friendship_Treaty
+	}
+	PREV = {
+		add_ai_strategy = {
+			type = befriend
+			id = PREV
+			value = 50
+		}
+	}
+}
+
+Sphere_Update = {
+	for_each_scope_loop = {
+		array = global.Sphere_Leaders
+		if = {
+			limit = {
+				is_in_array = { Sphere = PREV.Added_to_Sphere }
+			}
+			remove_from_array = { Sphere = PREV.Added_to_Sphere }	
+		}
+	}
+	var:Added_to_Sphere = {
+		log = "[THIS.GetName]"
+		set_variable = { Sphere_Leader = PREV }
+	}
+	add_to_array = { Sphere = var:Added_to_Sphere }
+	every_country = {
+		limit = {
+			is_subject_of = var:PREV.Added_to_Sphere
+		}
+		set_variable = { Sphere_Leader = PREV }
+		for_each_scope_loop = {
+			array = global.Sphere_Leaders
+			if = {
+				limit = {
+					is_in_array = { Sphere = PREV }
+				}
+				remove_from_array = { Sphere = PREV }	
+			}
+		}
+		PREV = {
+			add_to_array = { Sphere = PREV }
+		}
+	}
+	clear_variable = Added_to_Sphere
+}
+
+
+Sphere_Remove = {
+	for_each_scope_loop = {
+		array = global.Sphere_Leaders
+		if = {
+			limit = {
+				is_in_array = { Sphere = PREV.Added_to_Sphere }
+			}
+			remove_from_array = { Sphere = PREV.Added_to_Sphere }	
+		}
+	}
+	var:Added_to_Sphere = {
+		log = "[THIS.GetName]"
+		clear_variable = Sphere_Leader
+	}
+	every_country = {
+		limit = {
+			is_subject_of = var:PREV.Added_to_Sphere
+		}
+		clear_variable = Sphere_Leader
+		for_each_scope_loop = {
+			array = global.Sphere_Leaders
+			if = {
+				limit = {
+					is_in_array = { Sphere = PREV }
+				}
+				remove_from_array = { Sphere = PREV }	
+			}
+		}
+	}
+	clear_variable = Added_to_Sphere
+}

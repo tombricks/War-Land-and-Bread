@@ -190,3 +190,60 @@ d_create_fake_units = {
 		add_to_temp_variable = { i = 1 }
 	}
 }
+
+d_add_to_sphere_test = {
+
+	set_temp_variable = { i = 0 }
+	while_loop_effect = {
+		limit = { check_variable = { i < args^0 } }
+		FROM = { add_to_array = { Sphere = ZZZ } }
+		add_to_temp_variable = { i = 1 }
+	}
+}
+
+d_dismantle_faction = {
+	dismantle_faction = yes
+}
+
+d_create_army = {
+	division_template = {
+		name = "Infantry Liberation Unit"
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+			infantry = { x = 2 y = 2 }
+		}
+	}
+	
+	set_temp_variable = { num_of_divs = max_available_manpower_k }
+	log = "Population (1000s): [?num_of_divs]"
+	divide_temp_variable = { num_of_divs = 10 }
+	log = "Divisions: [?num_of_divs]"
+
+	set_temp_variable = { i = 0 }
+	while_loop_effect = {
+		limit = { check_variable = { i < num_of_divs } }
+		random_owned_state = {
+			create_unit = {
+				division = "name = \"Infantry Liberation Unit\" division_template = \"Infantry Liberation Unit\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = PREV
+			}
+		}
+		add_to_temp_variable = { i = 1 }
+		multiply_temp_variable = { i = 1.02 }
+	}
+}
+
+d_global_military_stats = {
+	set_temp_variable = { global_army = 0 }
+	every_country = {
+		add_to_temp_variable = { PREV.global_army = THIS.num_divisions }
+	}
+	log = "Divisions: [?global_army]"
+}

@@ -1301,3 +1301,5 @@
  BFTB_balkan_pact_enemy:0 "The Balkan Pact"
  BFTB_ROM_abandoned_us:0 "Abandoned Us"
  BFTB_ROM_stood_by_us:0 "Stood By Us"
+ 
+ RULE_VOLUNTEERS_BLOCKED_SPHERE_TT: "Cannot Send Volunteers to a Nation at war with a member of our Sphere"

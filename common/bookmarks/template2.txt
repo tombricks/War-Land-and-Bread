@@ -1,0 +1,44 @@
+bookmarks = {
+	bookmark = {
+		name = "SECOND_COLD_WAR_NAME"
+		desc = "SECOND_COLD_WAR_DESC"
+		date = 2000.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "RUS"
+		
+		"RUS" = {
+			history = "RUS_SECOND_COLD_WAR_DESC"
+			ideology = Marxism_Leninism
+		}
+		
+		"CHI" = {
+			history = "CHI_SECOND_COLD_WAR_DESC"
+			ideology = New_Marxism
+		}
+		
+		"---" = {
+			history = "UAR_SECOND_COLD_WAR_DESC"
+			ideology = Reformist_Socialism
+		}
+		
+		"---" = {
+			history = "UAR_SECOND_COLD_WAR_DESC"
+			ideology = Reformist_Socialism
+		}
+		
+		"---" = {
+			history = "UAR_SECOND_COLD_WAR_DESC"
+			ideology = Reformist_Socialism
+		}
+		
+		"---" = {
+			history = "UAR_SECOND_COLD_WAR_DESC"
+			ideology = Reformist_Socialism
+		}
+		
+		"---" = {
+			history = "CHI_SECOND_COLD_WAR_DESC"
+			ideology = New_Marxism
+		}
+	}
+}

@@ -12,26 +12,94 @@ debug_decisions = {
 		
 		fire_only_once = yes
 	}
-
-	france_get_germany = {
-		allowed = {
+	
+	DEBUG_German_Civil_War = {
+		allowed = { 
 			always = yes
 		}
 
 		complete_effect = {
 			GER = {
-				create_dynamic_country = {
-					original_tag = GER
-					FRA = {
-						release_puppet_on_controlled = PREV
-						set_autonomy = {
-							target = PREV
-							autonomy_state = Autonomy_Autonomous_Zone
-						}
-					}
-					Puppet_Gain_Military = yes
+				country_event = GER_FDJ.1
+			}
+		}
+		
+		fire_only_once = yes
+	}
+	
+	DEBUG_Prepare_for_WW3 = {
+		allowed = { 
+			always = yes
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					is_in_array = { RUS.Sphere = THIS }
+				}
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = CHI
+					value = 300
+				}
+			}
+			
+			every_country = {
+				limit = {
+					is_in_array = { CHI.Sphere = THIS }
+				}
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = RUS
+					value = 300
 				}
 			}
 		}
+		
+		fire_only_once = yes
+	}
+	
+	
+	DEBUG_Start_WW3 = {
+		allowed = { 
+			always = yes
+		}
+
+		complete_effect = {
+			CHI = {
+				declare_war_on = {
+					target = RUS
+					type = topple_government
+				}
+			}
+
+			every_country = {
+				limit = {
+					OR = { is_in_faction_with = RUS is_in_array = { RUS.Sphere = THIS } }
+				}
+				RUS = {
+					add_to_faction = PREV
+				}
+				add_to_war = {
+					targeted_alliance = RUS
+					enemy = CHI
+				}
+			}
+			
+			every_country = {
+				limit = {
+					OR = { is_in_faction_with = CHI is_in_array = { CHI.Sphere = THIS } }
+				}
+				CHI = {
+					add_to_faction = PREV
+				}
+				add_to_war = {
+					targeted_alliance = CHI
+					enemy = RUS
+				}
+			}
+		}
+		
+		fire_only_once = yes
 	}
 }

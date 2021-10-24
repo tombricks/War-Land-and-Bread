@@ -2,6 +2,14 @@ Puppet_Command = {
 	save_event_target_as = new_puppet
 	OVERLORD = {
 		country_event = Puppet_Event.1
+		if = {
+			limit = {
+				has_variable = Sphere_Leader
+			}
+			var:Sphere_Leader = {
+				set_variable = { Added_to_Sphere = PREV.PREV } Sphere_Update = yes
+			}
+		}
 	}
 }
 

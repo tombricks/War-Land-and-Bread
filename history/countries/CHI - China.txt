@@ -37,8 +37,11 @@ create_faction = Faction_New_International
 add_to_faction = CHI
 add_to_faction = FRA
 add_to_faction = KOR
+add_to_faction = PAK
 
-add_to_array = { Global.CW_Sphere_Leaders = CHI }
-add_to_array = { CW_Sphere = CHI }
-add_to_array = { CW_Sphere = FRA }
-add_to_array = { CW_Sphere = KOR }
+add_to_array = { Global.Sphere_Leaders = CHI }
+set_variable = { Sphere_Leader = CHI }
+set_variable = { Added_to_Sphere = FRA } Sphere_Update = yes
+set_variable = { Added_to_Sphere = KOR } Sphere_Update = yes
+set_variable = { Added_to_Sphere = PNT } Sphere_Update = yes
+set_variable = { Added_to_Sphere = PAK } Sphere_Update = yes

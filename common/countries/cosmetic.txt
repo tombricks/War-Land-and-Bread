@@ -10,3 +10,7 @@ CHI_Provisional = {
 	color = rgb { 132 56 66 }
 	color_ui = rgb { 132 56 66 }
 }
+GER_FDJ = {
+	color = rgb { 2 70 142 }
+	color_ui = rgb { 2 70 142 }
+}

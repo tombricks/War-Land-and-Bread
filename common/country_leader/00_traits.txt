@@ -23,4 +23,5 @@ leader_traits = {
 
 	TITLE_General_Secretary = {  }
 	TITLE_Acting_General_Secretary = {  }
+	TITLE_Chairwoman = {  }
 }
