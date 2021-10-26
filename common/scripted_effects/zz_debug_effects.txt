@@ -247,3 +247,15 @@ d_global_military_stats = {
 	}
 	log = "Divisions: [?global_army]"
 }
+d_set_demilitarize_zone = {
+	for_each_scope_loop = {
+		array = args
+		set_demilitarized_zone = yes
+	}
+}
+d_set_militarize_zone = {
+	for_each_scope_loop = {
+		array = args
+		set_demilitarized_zone = no
+	}
+}

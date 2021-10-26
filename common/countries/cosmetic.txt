@@ -14,3 +14,7 @@ GER_FDJ = {
 	color = rgb { 2 70 142 }
 	color_ui = rgb { 2 70 142 }
 }
+GER_NKFD = {
+	color = rgb { 90 73 70 }
+	color_ui = rgb { 90 73 70 }
+}

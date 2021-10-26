@@ -14,6 +14,7 @@ leader_traits = {
 	SUBIDEOLOGY_Islamic_Marxism = {  }
 	SUBIDEOLOGY_Military_Junta = {  }
 	SUBIDEOLOGY_Stalin_Thought = {  }
+	SUBIDEOLOGY_National_Bolshevism = {  }
 
 	SUBIDEOLOGY_Hypersocialism = {  }
 	SUBIDEOLOGY_Marxism_Leninism = {  }

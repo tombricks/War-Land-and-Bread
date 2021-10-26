@@ -1,0 +1,20 @@
+﻿add_namespace = Sphere
+
+country_event = {
+	id = Sphere.1 # The Call to Action
+	title = Sphere.1.TITLE
+	desc = Sphere.1.DESC
+	picture = GFX_Country_Soviet_Army
+	is_triggered_only = yes
+	
+	option = {
+		name = Sphere.1.A # Answer the Call
+		var:Sphere_Leader = {
+			add_to_faction = PREV
+		}
+	}
+	
+	option = {
+		name = Sphere.1.B # Reject the Call
+	}
+}

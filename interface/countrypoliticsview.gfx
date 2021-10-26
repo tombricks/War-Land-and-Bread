@@ -54,6 +54,11 @@ spriteTypes = {
 		name = "GFX_ideology_Military_Junta_subtype"
 		texturefile = "gfx/interface/ideologies/Military_Junta_subtype.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ideology_National_Bolshevism_subtype"
+		textureFile = "gfx/interface/ideologies/National_Bolshevism_subtype.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_unknown"

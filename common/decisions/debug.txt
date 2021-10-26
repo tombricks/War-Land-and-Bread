@@ -102,4 +102,22 @@ debug_decisions = {
 		
 		fire_only_once = yes
 	}
+
+	DEBUG_The_Call_to_Action = {
+		allowed = { 
+			always = yes
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					NOT = { is_in_faction_with = ROOT }
+					is_in_array = { ROOT.Sphere = THIS }
+				}
+				country_event = Sphere.1
+			}
+		}
+		
+		fire_only_once = yes
+	}
 }

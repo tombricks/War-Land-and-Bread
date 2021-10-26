@@ -1,6 +1,9 @@
 capital = 64
 set_stability = 0.6
 set_war_support = 0.6
+oob = "GER"
+set_country_flag = has_starting_oob
+country_lock_all_division_template = yes
 
 set_technology = {
 	infantry_weapons = 1
@@ -26,6 +29,10 @@ set_popularities = {
 	Reformist_Socialism = 100
 }
 
+add_ideas = {
+	GER_A_State_Disarmed
+}
+
 create_country_leader = {
 	name = "Hans Modrow"
 	picture = "gfx/leaders/GER/Hans Modrow.dds"
@@ -33,20 +40,9 @@ create_country_leader = {
 	traits = { SUBIDEOLOGY_Eurocommunism }
 }
 
-create_dynamic_country = {
-	original_tag = GER
-	set_cosmetic_tag = GER_FDJ
-	save_global_event_target_as = GER_FDJ
-	set_politics = {
-		ruling_party = New_Marxism
-	}
-	set_popularities = {
-		New_Marxism = 100
-	}
-	create_country_leader = {
-		name = "Congress of Revolutionaries"
-		picture = "gfx/leaders/GER/FDJ Flag.dds"
-		ideology = New_Marxism_ideology
-		traits = { SUBIDEOLOGY_Marxism_Leninism_Maoism }
-	}
+create_country_leader = {
+	name = "Michael Kühnen"
+	picture = "gfx/leaders/GER/Michael Kuhnen.dds"
+	ideology = Hypersocialism_ideology
+	traits = { SUBIDEOLOGY_National_Bolshevism }
 }

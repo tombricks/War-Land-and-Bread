@@ -542,3 +542,7 @@ THA = {
 	color = rgb { 156 163 149 }
 	color_ui = rgb { 156 163 149 }
 }
+SAR = {
+	color = rgb { 165 101 117 }
+	color_ui = rgb { 165 101 117 }
+}

@@ -1303,3 +1303,7 @@
  BFTB_ROM_stood_by_us:0 "Stood By Us"
  
  RULE_VOLUNTEERS_BLOCKED_SPHERE_TT: "Cannot Send Volunteers to a Nation at war with a member of our Sphere"
+ 
+ INVITE_TO_SPHERE_TITLE: "Invite to Sphere"
+ invite_to_sphere_send: "Invite §Y[FROM.GetNameWithFlag]§! to our Sphere"
+ invite_to_sphere_receive: "§Y[ROOT.GetNameWithFlag]§! invites us to their Sphere"

@@ -21,6 +21,7 @@ defined_text = {
 	text = { trigger = { has_country_leader_with_trait = SUBIDEOLOGY_Islamic_Marxism } localization_key = SUBIDEOLOGY_Islamic_Marxism }
 	text = { trigger = { has_country_leader_with_trait = SUBIDEOLOGY_Military_Junta } localization_key = SUBIDEOLOGY_Military_Junta }
 	text = { trigger = { has_country_leader_with_trait = SUBIDEOLOGY_Stalin_Thought } localization_key = SUBIDEOLOGY_Stalin_Thought }
+	text = { trigger = { has_country_leader_with_trait = SUBIDEOLOGY_National_Bolshevism } localization_key = SUBIDEOLOGY_National_Bolshevism }
 
 	text = { trigger = { has_government = Hypersocialism } localization_key = SUBIDEOLOGY_Hypersocialism }
 	text = { trigger = { has_government = Marxism_Leninism } localization_key = SUBIDEOLOGY_Marxism_Leninism }
@@ -53,6 +54,7 @@ defined_text = {
 	text = { trigger = { has_country_leader_with_trait = SUBIDEOLOGY_Islamic_Marxism } localization_key = SUBIDEOLOGY_Islamic_Marxism_ADJ }
 	text = { trigger = { has_country_leader_with_trait = SUBIDEOLOGY_Military_Junta } localization_key = SUBIDEOLOGY_Military_Junta_ADJ }
 	text = { trigger = { has_country_leader_with_trait = SUBIDEOLOGY_Stalin_Thought } localization_key = SUBIDEOLOGY_Stalin_Thought_ADJ }
+	text = { trigger = { has_country_leader_with_trait = SUBIDEOLOGY_National_Bolshevism } localization_key = SUBIDEOLOGY_National_Bolshevism_ADJ }
 	
 	text = { trigger = { has_government = Hypersocialism } localization_key = SUBIDEOLOGY_Hypersocialism_ADJ }
 	text = { trigger = { has_government = Marxism_Leninism } localization_key = SUBIDEOLOGY_Marxism_Leninism_ADJ }
@@ -104,6 +106,7 @@ defined_text = {
 	text = { trigger = { has_country_leader_with_trait = SUBIDEOLOGY_Islamic_Marxism } localization_key = "GFX_ideology_Islamic_Marxism_subtype" }
 	text = { trigger = { has_country_leader_with_trait = SUBIDEOLOGY_Military_Junta } localization_key = "GFX_ideology_Military_Junta_subtype" }
 	text = { trigger = { has_country_leader_with_trait = SUBIDEOLOGY_Stalin_Thought } localization_key = "GFX_ideology_Stalinism_subtype" }
+	text = { trigger = { has_country_leader_with_trait = SUBIDEOLOGY_National_Bolshevism } localization_key = "GFX_ideology_National_Bolshevism_subtype" }
 
 	text = { trigger = { has_government = Hypersocialism } localization_key = "GFX_ideology_Hypersocialism_group" }
 	text = { trigger = { has_government = Marxism_Leninism } localization_key = "GFX_ideology_Marxism_Leninism_group" }

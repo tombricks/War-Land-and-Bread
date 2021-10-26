@@ -1,28 +1,36 @@
-state = {
-	id = 50
-	name = "STATE_50"
-	state_category = large_city
-	
-	resources = {
-		steel = 1
-		oil = 1
-		aluminium = 1
+
+state={
+	id=50
+	name="STATE_50"
+	resources={
+		steel=1.000
+		oil=1.000
+		aluminium=1.000
 	}
 
-	history = {
-		victory_points = { 9517 20 }
-		victory_points = { 11499 3 }
-		victory_points = { 3530 10 }
-		victory_points = { 11640 1 }
-		victory_points = { 6712 3 }
+	history={
+		victory_points = {
+			9517 20 
+		}
+		victory_points = {
+			11499 3 
+		}
 		owner = GER
 		add_core_of = GER
-		
-		buildings = {infrastructure = 8 arms_factory = 5 industrial_complex = 1 air_base = 3 } 
+		buildings = {
+			infrastructure = 8
+			arms_factory = 3
+			industrial_complex = 1
+			air_base = 2
+
+		}
+
 	}
 
-	provinces = { 519 694 3530 3679 3690 3692 6542 6555 6568 6581 6712 6934 9517 9545 9655 11486 11499 11640 13126 }
-
-	manpower = 5086854 # = 5086854
-	buildings_max_level_factor = 1.000
+	provinces={
+		519 694 3679 3690 6555 6581 6934 9517 9545 9655 11486 11499 13126 
+	}
+	manpower=2543427
+	buildings_max_level_factor=1.000
+	state_category=large_city
 }

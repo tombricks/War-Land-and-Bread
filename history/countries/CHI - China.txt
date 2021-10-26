@@ -43,5 +43,5 @@ add_to_array = { Global.Sphere_Leaders = CHI }
 set_variable = { Sphere_Leader = CHI }
 set_variable = { Added_to_Sphere = FRA } Sphere_Update = yes
 set_variable = { Added_to_Sphere = KOR } Sphere_Update = yes
-set_variable = { Added_to_Sphere = PNT } Sphere_Update = yes
+set_variable = { Added_to_Sphere = SML } Sphere_Update = yes
 set_variable = { Added_to_Sphere = PAK } Sphere_Update = yes

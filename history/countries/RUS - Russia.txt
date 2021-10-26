@@ -112,6 +112,7 @@ set_autonomy = { target = ARM autonomy_state = Autonomy_Autonomous_Zone }
 set_autonomy = { target = AZR autonomy_state = Autonomy_Autonomous_Zone }
 set_autonomy = { target = TAN autonomy_state = Autonomy_Autonomous_Zone }
 set_autonomy = { target = MOL autonomy_state = Autonomy_Autonomous_Zone }
+set_autonomy = { target = SAR autonomy_state = autonomy_satellite } # UN Protectorate
 
 add_to_faction = RUS
 add_to_faction = KAZ
@@ -132,6 +133,7 @@ add_to_faction = TAN
 add_to_faction = MOL
 add_to_faction = ZAP
 add_to_faction = GER
+add_to_faction = AUS
 add_to_faction = HUN
 add_to_faction = ROM
 add_to_faction = OCC
@@ -150,6 +152,7 @@ add_to_faction = ENG
 add_to_faction = MON
 add_to_faction = USA
 add_to_faction = TUR
+add_to_faction = SAR
 
 add_to_array = { Global.Sphere_Leaders = RUS }
 set_variable = { Sphere_Leader = RUS }
@@ -171,6 +174,7 @@ set_variable = { Added_to_Sphere = TAN } Sphere_Update = yes
 set_variable = { Added_to_Sphere = MOL } Sphere_Update = yes
 set_variable = { Added_to_Sphere = ZAP } Sphere_Update = yes
 set_variable = { Added_to_Sphere = GER } Sphere_Update = yes
+set_variable = { Added_to_Sphere = AUS } Sphere_Update = yes
 set_variable = { Added_to_Sphere = HUN } Sphere_Update = yes
 set_variable = { Added_to_Sphere = ROM } Sphere_Update = yes
 set_variable = { Added_to_Sphere = OCC } Sphere_Update = yes
@@ -188,6 +192,7 @@ set_variable = { Added_to_Sphere = BAS } Sphere_Update = yes
 set_variable = { Added_to_Sphere = CAT } Sphere_Update = yes
 set_variable = { Added_to_Sphere = MON } Sphere_Update = yes
 set_variable = { Added_to_Sphere = USA } Sphere_Update = yes
-set_variable = { Added_to_Sphere = TUR } Sphere_Update = Yes
+set_variable = { Added_to_Sphere = TUR } Sphere_Update = yes
+set_variable = { Added_to_Sphere = SAR } Sphere_Update = yes
 set_variable = { Added_to_Sphere = SOM } Sphere_Update = yes
 SOM = { Friendship_Treaty_with_PREV = yes }

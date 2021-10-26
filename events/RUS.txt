@@ -89,6 +89,14 @@ news_event = {
 			}
 			add_to_array = { Global.Sphere_Leaders = USA }
 			clear_array = Temp_Sphere
+			every_country = {
+				limit = {
+					has_country_flag = UN_Mandate
+				}
+				USA = {
+					set_autonomy = { target = PREV autonomy_state = autonomy_satellite }
+				}
+			}
 		}
 	}
 	

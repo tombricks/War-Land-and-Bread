@@ -11,6 +11,24 @@ country_event = {
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: Event GER_FDJ.1"
 		hidden_effect = {
+			create_dynamic_country = {
+				original_tag = GER
+				set_cosmetic_tag = GER_FDJ
+				save_global_event_target_as = GER_FDJ
+				set_politics = {
+					ruling_party = New_Marxism
+				}
+				set_popularities = {
+					New_Marxism = 100
+				}
+				create_country_leader = {
+					name = "Congress of Revolutionaries"
+					picture = "gfx/leaders/GER/FDJ Flag.dds"
+					ideology = New_Marxism_ideology
+					traits = { SUBIDEOLOGY_Marxism_Leninism_Maoism }
+				}
+				inherit_technology = GER
+			}
 			set_country_flag = Left_Faction_for_War
 			leave_faction = yes
 			FDJ = {
