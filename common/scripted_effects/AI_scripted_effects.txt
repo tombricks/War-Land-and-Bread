@@ -36,3 +36,42 @@ AI_War_against_PREV = {
         value = 2500
     }
 }
+
+AI_War_against_FROM = {
+    add_ai_strategy = {
+        type = declare_war
+        id = FROM
+        value = 2500
+    }
+
+    add_ai_strategy = {
+        type = prepare_for_war
+        id = FROM
+        value = 2500
+    }
+
+    add_ai_strategy = {
+        type = conquer
+        id = FROM
+        value = 2500
+    }
+    
+    add_ai_strategy = {
+        type = diplo_action_desire
+        id = FROM
+        target = declare_war        
+        value = 2500
+    }
+    
+    add_ai_strategy = {
+        type = invade
+        id = FROM
+        value = 2500
+    }
+    
+    add_ai_strategy = {
+        type = antagonize
+        id = FROM
+        value = 2500
+    }
+}

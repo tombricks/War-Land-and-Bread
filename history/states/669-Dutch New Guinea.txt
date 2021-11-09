@@ -11,7 +11,9 @@ state = {
 
 	history = {
 		victory_points = { 12371 1 }
-		owner = ZZZ
+		owner = AST
+		add_core_of = AST
+		add_claim_by = INO
 		
 		buildings = {infrastructure = 1 12371 = { naval_base = 2 } } 
 	}

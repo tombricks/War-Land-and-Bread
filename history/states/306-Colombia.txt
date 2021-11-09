@@ -11,7 +11,8 @@ state = {
 
 	history = {
 		victory_points = { 10747 10 }
-		owner = ZZZ
+		owner = COL
+		add_core_of = COL
 		
 		buildings = {infrastructure = 3 arms_factory = 1 industrial_complex = 5 air_base = 2 } 
 		add_extra_state_shared_building_slots = 2

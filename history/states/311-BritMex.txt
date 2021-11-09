@@ -11,7 +11,8 @@ state = {
 
 	history = {
 		victory_points = { 2077 1 }
-		owner = ZZZ
+		owner = CTA
+		add_core_of = CTA
 		
 		buildings = {infrastructure = 4 2077 = { naval_base = 1 } } 
 	}

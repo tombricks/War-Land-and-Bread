@@ -10,7 +10,9 @@ state = {
 	}
 
 	history = {
-		owner = ZZZ
+		owner = RGS
+		add_core_of = RGS
+		add_claim_by = BRA
 		
 		buildings = {infrastructure = 2 } 
 	}

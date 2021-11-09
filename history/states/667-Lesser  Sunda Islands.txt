@@ -10,7 +10,8 @@ state = {
 	}
 
 	history = {
-		owner = ZZZ
+		owner = INO
+		add_core_of = INO
 		
 		buildings = {infrastructure = 3 1355 = { naval_base = 1 } 10175 = { naval_base = 1 } 12234 = { naval_base = 1 } } 
 	}

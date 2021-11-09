@@ -13,14 +13,46 @@ Cold_War = {
 		OR = {
 			tag = CHI
 			tag = RUS
+			has_country_flag = third_bloc
+		}
+		NOT = {
+			is_subject = yes
 		}
 	}
 	visible_when_empty = yes
+}
+
+alignment_category = {
+	icon = power_struggle
+	visible = {
+		NOT = {
+			OR = {
+				tag = RUS
+				tag = ZZZ
+				tag = CHI
+			}
+		}
+	}
 }
 
 puppet_decisions = {
 	icon = generic_research
 	visible = {
 		is_subject = no
+		NOT = { tag = ZZZ }
+	}
+}
+
+pan_socialist_decisions = {
+	icon = generic_political_actions
+	visible = {
+		is_subject = no
+		NOT = {
+			OR = {
+				tag = RUS
+				tag = CHI
+				tag = ZZZ
+			}
+		}	
 	}
 }

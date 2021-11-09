@@ -11,7 +11,8 @@ state = {
 
 	history = {
 		victory_points = { 2050 1 }
-		owner = ZZZ
+		owner = WAF
+		add_core_of = WAF
 		
 		buildings = {infrastructure = 3 arms_factory = 0 industrial_complex = 1 2050 = { naval_base = 3 } } 
 	}

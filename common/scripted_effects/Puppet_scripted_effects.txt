@@ -141,3 +141,105 @@ Puppet_Satellite = {
 		}
 	}
 }
+
+set_union_cosmetic_tag = {
+
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = AUS
+					tag = HUN
+				}
+			}
+			OR = {
+				tag = AUS
+				tag = HUN
+			}
+		}
+		set_cosmetic_tag = austria_hungary_union
+	}
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = BEL
+					tag = HOL
+					AND = {
+						tag = LUX
+						OR = {
+							BEL = { exists = no }
+							HOL = { exists = no }
+						}
+					}
+				}
+			}
+			OR = {
+				tag = BEL
+				tag = HOL
+				AND = {
+					tag = LUX
+					OR = {
+						BEL = { exists = no }
+						HOL = { exists = no }
+					}
+				}
+			}
+		}
+		set_cosmetic_tag = united_netherlands
+	}
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = GER
+					tag = AUS
+				}
+			}
+			OR = {
+				tag = AUS
+				tag = GER
+			}
+		}
+		set_cosmetic_tag = pan_germanic_republic
+	}
+	if = {
+		limit = {
+			FROM = {
+				tag = UAR
+			}
+			tag = TUR
+		}
+		set_cosmetic_tag = ottoman_restored
+	}
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = POR
+					tag = SPA
+				}
+			}
+			OR = {
+				tag = SPA
+				tag = POR
+			}
+		}
+		set_cosmetic_tag = iberian_union
+	}
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = POL
+					tag = ROM
+				}
+			}
+			OR = {
+				tag = ROM
+				tag = POL
+			}
+		}
+		set_cosmetic_tag = intermarium
+	}
+}

@@ -19,3 +19,26 @@
  banned_communism_flag:0 "Has banned communist parties"
  
  RUS_Cold_War_Propose_Treaty: "Propose a Friendship Treaty with [FROM.GetNameWithFlag]"
+
+ #cold war stufferino
+ Cold_War:0 "The Sino-Soviet Cold War"
+ Cold_War_desc:0 ""
+ ensure_political_correctness_in_FROM:0 "Ensure Political Correctness in [FROM.GetNameDef]"
+ support_somali_civil_war_side:0 "Support Our Side in the Somali Civil War"
+ centralize_alliance_with_FROM:0 "Centralize our Alliance with [FROM.GetNameDef]"
+ heat_up_cold_war:0 "Escalate the Conflict"
+ alignment_category:0 "Deciding Our Alignment"
+ alignment_category_desc:0 "The heating up of the Soviet and Sino conflict into a full-blown war is inevitable, we should decide where to place our allegiance."
+ lean_towards_CHI:0 "Lean Towards [CHI.GetNameDef]"
+ align_with_CHI:0 "Align with [CHI.GetNameDef]"
+ lean_towards_RUS:0 "Lean Towards [RUS.GetNameDef]"
+ align_with_RUS:0 "Align with [RUS.GetNameDef]"
+ form_independent_bloc:0 "Form an Independent Bloc"
+ seek_alliance_with_from:0 "Seek an Alliance with [FROM.GetNameDef]"
+ ask_FROM_to_join_side:0 "Ask [FROM.GetNameDef] to Join Our Side"
+ #unionizing
+ pan_socialist_decisions:0 "Internationalism"
+ pan_socialist_decisions_desc:0 "The division of nations is against communism and its principles. Socialism in One Country is a betrayal of the international revolution. We should try and further unite the workers surrounding us into one greater union."
+ seek_defensive_pact_FROM:0 "Seek a Defensive Pact with [FROM.GetNameDef]"
+ further_integrate_alliance_with_FROM:0 "Form a Mutually Beneficial Overlordship for [FROM.GetNameDef]"
+ integrate_with_FROM:0 "Integrate the [FROM.GetAdjective] People into our Union"

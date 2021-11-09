@@ -12,7 +12,9 @@ state={
 		victory_points = {
 			2096 1 
 		}
-		owner = ZZZ
+		owner = EAF
+		add_core_of = EAF
+		add_claim_by = SUD
 		buildings = {
 			infrastructure = 3
 

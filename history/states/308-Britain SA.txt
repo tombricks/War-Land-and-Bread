@@ -10,7 +10,8 @@ state = {
 	}
 
 	history = {
-		owner = ZZZ
+		owner = CBN
+		add_core_of = CBN
 		
 		buildings = {infrastructure = 4 4450 = { naval_base = 1 } 7123 = { naval_base = 1 } } 
 	}

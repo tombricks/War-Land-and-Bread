@@ -12,7 +12,9 @@ state = {
 	history = {
 		victory_points = { 10889 1 }
 		victory_points = { 2021 3 }
-		owner = ZZZ
+		owner = ZAT
+		add_core_of = ZAT
+		add_claim_by = MEX
 		
 		buildings = {infrastructure = 3 air_base = 2 10889 = { naval_base = 2 } } 
 	}

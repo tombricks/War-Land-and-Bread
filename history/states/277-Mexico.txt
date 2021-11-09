@@ -12,7 +12,9 @@ state = {
 	history = {
 		victory_points = { 1965 25 }
 		victory_points = { 2008 10 }
-		owner = ZZZ
+		owner = MEX
+		add_core_of = MEX
+		add_claim_by = ZAT
 		
 		buildings = {infrastructure = 5 arms_factory = 1 industrial_complex = 3 air_base = 3 } 
 	}

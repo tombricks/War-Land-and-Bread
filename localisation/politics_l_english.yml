@@ -151,3 +151,6 @@
  RETURN_STATES_NOT_POSSIBLE_NOT_CONTROLLED:0 "The states in red are not being controlled by you."
  POLITICS_IDEA_STAT_TRADE:1 "£resources_to_market_icon£  $VALUE|H0%$"
  POLITICS_IDEA_STAT_RECRUITABLE:0 "£manpower_icon£  $VALUE|=+1%$"
+
+ SECOND_COLD_WAR_NAME:0 "The Second Cold War"
+ SECOND_COLD_WAR_DESC:0 "The workers have triumphed over the capitalist bougoisie and their allies, and now every corner in the world has the red banner of labor raised above it. But there are still tensions between the two major socialist powers of China and Russia, and a cold war has begun between the two, seemingly the same as the one that came before the final triumph over capitalism. Which sect of socialism will succeed; the Chinese or Russian model? Or will another kind rise up to take their places on the top of the world?"

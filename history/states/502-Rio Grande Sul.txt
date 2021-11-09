@@ -11,7 +11,9 @@ state = {
 
 	history = {
 		victory_points = { 10447 3 }
-		owner = ZZZ
+		owner = RGS
+		add_core_of = RGS
+		add_claim_by = BRA
 		
 		buildings = {infrastructure = 5 air_base = 2 10447 = { naval_base = 3 } } 
 	}

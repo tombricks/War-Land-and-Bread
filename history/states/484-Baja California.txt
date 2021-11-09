@@ -16,6 +16,8 @@ state = {
 		victory_points = { 13215 5 }
 		owner = USA
 		add_core_of = USA
+		add_core_of = MEX
+		add_claim_by = ZAT
 		
 		buildings = {infrastructure = 3 air_base = 3 1892 = { naval_base = 2 } 12736 = { naval_base = 1 } } 
 	}

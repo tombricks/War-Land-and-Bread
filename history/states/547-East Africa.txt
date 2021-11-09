@@ -12,7 +12,8 @@ state = {
 	history = {
 		victory_points = { 1939 2 }
 		victory_points = { 5210 1 }
-		owner = ZZZ
+		owner = EAF
+		add_core_of = EAF
 		
 		buildings = {infrastructure = 3 industrial_complex = 1 5210 = { naval_base = 2 } } 
 	}

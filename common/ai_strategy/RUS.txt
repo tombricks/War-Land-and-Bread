@@ -4,7 +4,7 @@ RUS_CHI_Cold_War = {
 	}
 	enable = {
 		country_exists = CHI
-		NOT = { is_ally_with = CHI }
+		NOT = { OR = { is_ally_with = CHI has_global_flag = cold_war_gone_hot } }
 	}
 
 	abort_when_not_enabled = yes

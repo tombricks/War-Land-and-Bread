@@ -12,7 +12,8 @@ state = {
 	history = {
 		victory_points = { 6994 5 }
 		victory_points = { 7169 15 }
-		owner = ZZZ
+		owner = JPN
+		add_core_of = JPN
 		
 		buildings = {arms_factory = 1 industrial_complex = 2 fuel_silo = 1 infrastructure = 3 air_base = 6 9859 = { naval_base = 6 } } 
 	}

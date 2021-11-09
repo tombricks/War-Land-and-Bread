@@ -546,3 +546,107 @@ SAR = {
 	color = rgb { 165 101 117 }
 	color_ui = rgb { 165 101 117 }
 }
+EAF = {
+	color = rgb { 8 136 171 }
+	color_ui = rgb { 8 136 171 }
+}
+MEX = {
+	color = rgb { 134 81 86 }
+	color_ui = rgb { 134 81 86 }
+}
+ZAT = {
+	color = rgb { 42 15 15 }
+	color_ui = rgb { 42 15 15 }
+}
+RCG = {
+	color = rgb { 96 193 76 }
+	color_ui = rgb { 96 193 76 }
+}
+CAR = {
+	color = rgb { 222 117 0 }
+	color_ui = rgb { 222 117 0 }
+}
+PRU = {
+	color = rgb { 89 23 81 }
+	color_ui = rgb { 89 23 81 }
+}
+PBC = {
+	color = rgb { 238 181 33 }
+	color_ui = rgb { 238 181 33 }
+}
+CSA = {
+	color = rgb { 138 138 138 }
+	color_ui = rgb { 138 138 138 }
+}
+AST = {
+	color = rgb { 79 152 112 }
+	color_ui = rgb { 79 152 112 }
+}
+CTA = {
+	color = rgb { 133 115 143 }
+	color_ui = rgb { 133 115 143 }
+}
+CBN = {
+	color = rgb { 133 182 88 }
+	color_ui = rgb { 133 182 88 }
+}
+BOR = {
+	color = rgb { 16 75 21 }
+	color_ui = rgb { 16 75 21 }
+}
+INO = {
+	color = rgb { 104 38 52 }
+	color_ui = rgb { 104 38 52 }
+}
+PHI = {
+	color = rgb { 212 195 118 }
+	color_ui = rgb { 212 195 118 }
+}
+VEN = {
+	color = rgb { 200 120 120 }
+	color_ui = rgb { 200 120 120 }
+}
+COL = {
+	color = rgb { 96 185 120 }
+	color_ui = rgb { 96 185 120 }
+}
+RHO = {
+	color = rgb { 35 26 78 }
+	color_ui = rgb { 35 26 78 }
+}
+SAF = {
+	color = rgb { 75 26 78 }
+	color_ui = rgb { 75 26 78 }
+}
+HOK = {
+	color = rgb { 100 40 40 }
+	color_ui = rgb { 100 40 40 }
+}
+JPN = {
+	color = rgb { 96 185 120 }
+	color_ui = rgb { 96 185 120 }
+}
+ARG = {
+	color = rgb { 82 104 162 }
+	color_ui = rgb { 82 104 162 }
+}
+BRA = {
+	color = rgb { 50 112 61 }
+	color_ui = rgb { 50 112 61 }
+}
+RGS = {
+	color = rgb { 182 95 95 }
+	color_ui = rgb { 182 95 95 }
+}
+WAF = {
+	color = rgb { 166 61 0 }
+	color_ui = rgb { 166 61 0 }
+}
+MLI = {
+	color = rgb { 43 51 129 }
+	color_ui = rgb { 43 51 129 }
+}
+MOR = {
+	color = rgb { 143 51 129 }
+	color_ui = rgb { 143 51 129 }
+}

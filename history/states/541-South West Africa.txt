@@ -11,7 +11,8 @@ state = {
 
 	history = {
 		victory_points = { 4879 1 }
-		owner = ZZZ
+		owner = SAF
+		add_core_of = SAF
 		
 		buildings = {infrastructure = 3 } 
 	}

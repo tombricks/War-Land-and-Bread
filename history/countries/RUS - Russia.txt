@@ -112,6 +112,7 @@ set_autonomy = { target = ARM autonomy_state = Autonomy_Autonomous_Zone }
 set_autonomy = { target = AZR autonomy_state = Autonomy_Autonomous_Zone }
 set_autonomy = { target = TAN autonomy_state = Autonomy_Autonomous_Zone }
 set_autonomy = { target = MOL autonomy_state = Autonomy_Autonomous_Zone }
+set_autonomy = { target = HOK autonomy_state = Autonomy_Autonomous_Zone }
 set_autonomy = { target = SAR autonomy_state = autonomy_satellite } # UN Protectorate
 
 add_to_faction = RUS
@@ -119,6 +120,7 @@ add_to_faction = KAZ
 add_to_faction = UKR
 add_to_faction = BLR
 add_to_faction = LIT
+add_to_faction = HOK
 add_to_faction = LAT
 add_to_faction = EST
 add_to_faction = FIN
@@ -135,20 +137,13 @@ add_to_faction = ZAP
 add_to_faction = GER
 add_to_faction = AUS
 add_to_faction = HUN
-add_to_faction = ROM
 add_to_faction = OCC
 add_to_faction = HOL
 add_to_faction = LUX
 add_to_faction = BEL
-add_to_faction = ITA
-add_to_faction = SPA
-add_to_faction = POR
-add_to_faction = BAS
-add_to_faction = CAT
 add_to_faction = DEN
 add_to_faction = NOR
 add_to_faction = SWE
-add_to_faction = ENG
 add_to_faction = MON
 add_to_faction = USA
 add_to_faction = TUR

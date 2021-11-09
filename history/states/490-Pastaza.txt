@@ -10,7 +10,10 @@ state = {
 	}
 
 	history = {
-		owner = ZZZ
+		owner = PRU
+		add_core_of = PRU
+		add_core_of = PBC
+		add_claim_by = COL
 		
 		buildings = {infrastructure = 3 industrial_complex = 1 air_base = 1 } 
 	}

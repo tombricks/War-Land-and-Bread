@@ -12,7 +12,8 @@ state = {
 	history = {
 		victory_points = { 1468 3 }
 		victory_points = { 4696 1 }
-		owner = ZZZ
+		owner = SAF
+		add_core_of = SAF
 		
 		buildings = {infrastructure = 5 industrial_complex = 2 air_base = 1 1468 = { naval_base = 2 } 4696 = { naval_base = 2 } } 
 	}

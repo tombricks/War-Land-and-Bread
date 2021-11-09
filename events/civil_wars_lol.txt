@@ -1,0 +1,243 @@
+add_namespace = civil_war_event
+
+country_event = { #Central African Empire Coup
+	id = civil_war_event.1
+	title = civil_war_event.1.t
+	desc = civil_war_event.1.d
+
+	is_triggered_only = yes
+
+	option = { #For the glory of the empire
+		name = civil_war_event.1.a
+		hidden_effect = {
+			add_popularity = {
+				ideology = Reactionism
+				popularity = 0.15
+			}
+		}
+		start_civil_war = {
+			ruling_party = Reactionism
+			ideology = ROOT
+			size = 0.3
+		}
+	}
+	option = { #For the glory of the empire
+		name = civil_war_event.1.b
+		start_civil_war = {
+			ideology = Reactionism
+			size = 0.4
+		}
+	}
+}
+
+country_event = { #CSA revolts
+	id = civil_war_event.2
+	title = civil_war_event.2.t
+	desc = civil_war_event.2.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		owns_state = 362
+		owns_state = 363
+		owns_state = 364
+		owns_state = 365
+		owns_state = 366
+		owns_state = 367
+		owns_state = 368
+		owns_state = 370
+		owns_state = 371
+		owns_state = 372
+		owns_state = 375
+	}
+
+	immediate = {
+		hidden_effect = {
+			CSA = {
+				inherit_technology = USA
+				transfer_state = 362
+				transfer_state = 363
+				transfer_state = 364
+				transfer_state = 365
+				transfer_state = 366
+				transfer_state = 367
+				transfer_state = 368
+				transfer_state = 370
+				transfer_state = 371
+				transfer_state = 372
+				transfer_state = 375
+				d_create_army = yes
+			}
+			USA = {
+				transfer_units_fraction = {
+					target = CSA
+					size = 0.2
+				}
+			}
+			every_state = {
+				limit = { is_owned_by = CSA }
+				add_core_of = CSA
+			}
+			add_to_variable = { american_civil_wars_var = 1 }
+			if = {
+				limit = { NOT = { USA = { has_civil_war = yes } } }
+				news_event = { id = civil_war_event.3 days = 20 random = 24 }
+			}
+			random_list = {
+				20 = {
+					country_event = { id = civil_war_event.4 days = 5 random = 120 }
+				}
+				80 = {
+					add_war_support = 0.01
+					add_stability = 0.01
+				}
+			}
+		}
+	}
+
+	option = { #Crush the Confederates
+		name = civil_war_event.2.a
+		if = {
+			limit = { is_in_faction = yes }
+			leave_faction = yes
+		}
+		declare_war_on = {
+			target = CSA
+			type = annex_everything
+		}
+	}
+	option = { #Crush the Yank Revisionists
+		name = civil_war_event.2.b
+		if = {
+			limit = { is_in_faction = yes }
+			leave_faction = yes
+		}
+		declare_war_on = {
+			target = CSA
+			type = annex_everything
+		}
+		CSA = { change_tag_from = USA }
+	}
+}
+
+news_event = { #north america plunges into civil war
+	id = civil_war_event.3
+	title = civil_war_event.3.t
+	picture = GFX_news_event_ger_civil_war
+	desc = {
+		trigger = {
+			check_variable = { american_civil_wars_var < 2 }
+		}
+		text = civil_war_event.3.d1
+	}
+	desc = {
+		trigger = {
+			check_variable = { american_civil_wars_var > 1 }
+		}
+		text = civil_war_event.3.d2
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = { # we will fight for our freedom
+		trigger = { OR = { original_tag = USA tag = CSA } }
+	}
+	option = { # get the popcorn
+		trigger = { NOT = { OR = { original_tag = USA tag = CSA } } }
+	}
+}
+
+country_event = { #Midwestern hardliner stalinist revolt
+	id = civil_war_event.4
+	title = civil_war_event.4.t
+	desc = civil_war_event.4.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			create_dynamic_country = {
+				original_tag = USA
+				set_country_flag = USA_hardliner_stalinist_flag
+				set_cosmetic_tag = USA_hardliner_stalinist
+				save_event_target_as = stalinist_usa
+				set_capital = 394
+
+				set_politics = {
+					ruling_party = Marxism_Leninism
+				}
+				set_popularities = {
+					Marxism_Leninism = 100
+				}
+				create_country_leader = {
+					name = "Svetlana Stalin"
+					picture = "gfx/leaders/NZL/GFX_NZL_elsie_farrelly.dds"
+					ideology = Marxism_Leninism_ideology
+				}
+				transfer_state = 276
+				transfer_state = 261
+				transfer_state = 393
+				transfer_state = 394
+				transfer_state = 396
+				transfer_state = 395
+				transfer_state = 392
+				transfer_state = 391
+				transfer_state = 682
+				transfer_state = 360
+				every_state = {
+					limit = { is_core_of = PREV NOT = { is_owned_by = PREV } }
+					remove_core_of = PREV
+					add_claim_by = PREV
+				}
+				USA = {
+					transfer_units_fraction = {
+						target = PREV
+						size = 0.33
+					}
+				}
+			}
+			add_to_variable = { american_civil_wars_var = 1 }
+			if = {
+				limit = { NOT = { USA = { has_war_with = CSA } } }
+				news_event = { id = civil_war_event.3 days = 20 random = 24 }
+			}
+		}
+	}
+
+	option = { #Stomp the Stalinists
+		name = civil_war_event.4.a
+		if = {
+			limit = { is_in_faction = yes }
+			leave_faction = yes
+		}
+		random_other_country = {
+			limit = { has_country_flag = USA_hardliner_stalinist_flag }
+			USA = {
+				declare_war_on = {
+					target = PREV
+					type = civil_war
+				}
+			}
+		}
+	}
+	option = { #Crush Revisionists
+		name = civil_war_event.4.b
+		if = {
+			limit = { is_in_faction = yes }
+			leave_faction = yes
+		}
+		random_other_country = {
+			limit = { has_country_flag = USA_hardliner_stalinist_flag }
+			change_tag_from = USA
+			USA = {
+				declare_war_on = {
+					target = PREV
+					type = civil_war
+				}
+			}
+		}
+	}
+}

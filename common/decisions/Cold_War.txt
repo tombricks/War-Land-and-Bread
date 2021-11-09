@@ -1,2 +1,760 @@
 Cold_War = {
+
+	support_somali_civil_war_side = {
+
+		icon = generic_industry
+
+		visible = {
+			NOT = {
+				OR = {
+					SOM = { has_war = no }
+					SML = { has_war = no }
+				}
+			}
+			OR = {
+				AND = {
+					country_exists = SML
+					tag = CHI
+				}
+				AND = {
+					tag = RUS
+					country_exists = SOM
+				}
+			}
+		}
+
+		days_re_enable = 90
+
+		cost = 15
+
+		available = {
+			has_manpower > 2499
+			has_equipment = {
+				infantry_equipment > 249
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date > 1987.10.1
+			}
+		}
+
+		complete_effect = {
+			add_manpower = -2500
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -250
+			}
+			if = {
+				limit = {
+					tag = RUS
+				}
+				random_state = {
+					limit = { is_owned_by = SOM is_controlled_by = SOM }
+					create_unit = {
+						division = "name = \"Soviet Volunteer\" division_template = \"Infantry Division\" start_experience_factor = 0.25"
+						owner = SOM
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CHI
+				}
+				random_state = {
+					limit = { is_owned_by = SML is_controlled_by = SML }
+					create_unit = {
+						division = "name = \"Chinese Volunteer\" division_template = \"Infantry Division\" start_experience_factor = 0.25"
+						owner = SML
+					}
+				}
+			}
+		}
+
+	}
+
+	centralize_alliance_with_FROM = {
+
+		icon = generic_civil_support
+
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = ROOT
+				is_subject = no
+			}
+		}
+
+		highlight_state_targets = { state = FROM.capital }
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date > 1987.10.1
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 60
+
+		complete_effect = {
+			FROM = {
+				country_event = { id = Puppet_Event.2 hours = 2 }
+			}
+		}
+
+	}
+
+	ensure_political_correctness_in_FROM = {
+
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = ROOT
+			}
+		}
+
+		highlight_state_targets = { state = FROM.capital }
+
+		available = {
+			FROM = {
+				has_government = ROOT
+				check_variable = { party_popularity@ruling_party < 0.8 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date > 1987.10.1
+			}
+		}
+
+		days_re_enable = 100
+
+		cost = 25
+
+		complete_effect = {
+			FROM = {
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.05
+				}
+				country_event = { id = Puppet_Event.9 hours = 2 }
+			}
+		}
+
+	}
+
+	heat_up_cold_war = {
+
+		icon = generic_prepare_civil_war
+
+		visible = {
+			NOT = {
+				OR = {
+					has_global_flag = cold_war_gone_hot 
+					is_subject_of = RUS
+					is_subject_of = CHI
+				}
+			}
+			OR = {
+				tag = CHI
+				tag = RUS
+			}
+		}
+
+		cost = 150
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				tag = CHI
+				strength_ratio = {
+					tag = RUS
+					ratio > 1
+				}
+				add = 2
+			}
+			modifier = {
+				tag = RUS
+				strength_ratio = {
+					tag = CHI
+					ratio > 1
+				}
+				add = 2
+			}
+			modifier = {
+				tag = RUS
+				check_variable = { RUS.num_subjects > CHI.num_subjects }
+				add = 2
+			}
+			modifier = {
+				tag = CHI
+				check_variable = { RUS.num_subjects < CHI.num_subjects }
+				add = 2
+			}
+			modifier = {
+				date < 1988.1.1
+				factor = 0
+			}
+		}
+
+		available = {
+			date > 1987.1.1
+		}
+
+		complete_effect = {
+			set_global_flag = cold_war_gone_hot 
+			if = {
+				limit = { tag = CHI }
+				declare_war_on = {
+					target = RUS
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { tag = RUS }
+				declare_war_on = {
+					target = CHI
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+
+	}
+
+	ask_FROM_to_join_side = {
+
+		icon = generic_political_discourse
+
+		visible = {
+			NOT = {
+				OR = {
+					has_global_flag = cold_war_gone_hot 
+					is_subject_of = RUS
+					is_subject_of = CHI
+					tag = RUS
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_neighbor_of = ROOT
+					has_government = ROOT
+				}
+				NOT = { tag = ZZZ }
+				is_in_faction = no
+				has_war = no
+				has_civil_war = no
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date > 1987.10.1
+			}
+		}
+
+		cost = 30
+
+		days_re_enable = 70
+
+		complete_effect = {
+			FROM = {
+				country_event = { id = actual_diplomacy.5 hours = 2 }
+			}
+		}
+
+	}
+
+}
+
+alignment_category = {
+	
+	lean_towards_CHI = {
+
+		visible = {
+			NOT = {
+				OR = {
+					has_global_flag = cold_war_gone_hot
+					is_in_faction_with = CHI
+					is_faction_leader = yes
+					has_country_flag = independent_bloc
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cost = 25
+
+		days_re_enable = 70
+
+		complete_effect = {
+			add_popularity = {
+				ideology = New_Marxism
+				popularity = 0.05
+			}
+		}
+
+	}
+
+	align_with_CHI = {
+
+		visible = {
+			NOT = {
+				OR = {
+					has_global_flag = cold_war_gone_hot
+					is_in_faction_with = CHI
+					is_faction_leader = yes
+					has_country_flag = independent_bloc
+				}
+			}
+		}
+
+		available = {
+			New_Marxism > 0.4
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_politics = {
+				ruling_party = New_Marxism
+				elections_allowed = no
+			}
+			CHI = {
+				country_event = { id = actual_diplomacy.1 hours = 2 }
+			}
+		}
+
+	}
+
+	lean_towards_RUS = {
+
+		visible = {
+			NOT = {
+				OR = {
+					has_global_flag = cold_war_gone_hot
+					is_in_faction_with = RUS
+					is_faction_leader = yes
+					has_country_flag = independent_bloc
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cost = 25
+
+		days_re_enable = 70
+
+		complete_effect = {
+			add_popularity = {
+				ideology = Marxism_Leninism
+				popularity = 0.05
+			}
+		}
+
+	}
+
+	align_with_RUS = {
+
+		visible = {
+			NOT = {
+				OR = {
+					has_global_flag = cold_war_gone_hot
+					is_in_faction_with = RUS
+					is_faction_leader = yes
+					has_country_flag = independent_bloc
+				}
+			}
+		}
+
+		available = {
+			Marxism_Leninism > 0.4
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_politics = {
+				ruling_party = Marxism_Leninism
+				elections_allowed = no
+			}
+			RUS = {
+				country_event = { id = actual_diplomacy.1 hours = 2 }
+			}
+		}
+
+	}
+
+	form_independent_bloc = {
+
+		fire_only_once = yes
+
+		icon = generic_civil_support
+
+		cost = 100
+
+		visible = {
+			NOT = {
+				OR = {
+					has_global_flag = cold_war_gone_hot
+					is_subject = yes
+					is_faction_leader = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 10
+				tag = ENG
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = loyal_ally
+			}
+		}
+
+		complete_effect = {
+			set_rule { can_create_factions = yes }
+			set_country_flag = independent_bloc
+			if = {
+				limit = { is_in_faction = yes }
+				faction_leader = {
+					country_event = { id = actual_diplomacy.8 hours = 2 }
+				}
+				leave_faction = yes
+			}
+			every_other_country = {
+				limit = { is_faction_leader = yes }
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_decrease
+				}
+			}
+			if = {
+				limit = { tag = ENG }
+				create_faction = commonwealth_workers
+			}
+			hidden_effect = {
+				random_other_country = {
+					limit = { is_subject = no is_faction_leader = no OR = { has_government = ROOT is_neighbor_of = ROOT } }
+					ROOT = {
+						add_ai_strategy = {
+							id = PREV
+							type = alliance
+							value = 100
+						}
+						add_ai_strategy = {
+							id = PREV
+							type = befriend
+							value = 100
+						}
+					}
+				}
+				random_other_country = {
+					limit = { is_subject = no is_faction_leader = no OR = { has_government = ROOT is_neighbor_of = ROOT } }
+					ROOT = {
+						add_ai_strategy = {
+							id = PREV
+							type = alliance
+							value = 100
+						}
+						add_ai_strategy = {
+							id = PREV
+							type = befriend
+							value = 100
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	seek_alliance_with_from = {
+
+		icon = generic_political_discourse
+
+		visible = {
+			has_country_flag = independent_bloc
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_neighbor_of = ROOT
+					has_government = ROOT
+				}
+				NOT = { tag = ZZZ }
+				is_in_faction = no
+				has_war = no
+				has_civil_war = no
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cost = 25
+
+		fixed_random_seed = no
+
+		days_re_enable = 70
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = { is_in_faction = no }
+					random_list = {
+						10 = {
+							create_faction = FACTION_NAME_NONALIGNED_1
+						}
+						10 = {
+							create_faction = FACTION_NAME_NONALIGNED_2
+						}
+						10 = {
+							create_faction = FACTION_NAME_NONALIGNED_3
+						}
+						10 = {
+							create_faction = FACTION_NAME_NONALIGNED_4
+						}
+						10 = {
+							create_faction = FACTION_NAME_NONALIGNED_5
+						}
+						10 = {
+							create_faction = FACTION_NAME_COMMUNIST_1
+						}
+						10 = {
+							create_faction = FACTION_NAME_COMMUNIST_2
+						}
+						10 = {
+							create_faction = FACTION_NAME_COMMUNIST_3
+						}
+						10 = {
+							create_faction = FACTION_NAME_COMMUNIST_4
+						}
+						10 = {
+							create_faction = FACTION_NAME_COMMUNIST_5
+						}
+						10 = {
+							create_faction = FACTION_NAME_DEMOCRATIC_1
+						}
+						10 = {
+							create_faction = FACTION_NAME_DEMOCRATIC_2
+						}
+						10 = {
+							create_faction = FACTION_NAME_DEMOCRATIC_3
+						}
+						10 = {
+							create_faction = FACTION_NAME_DEMOCRATIC_4
+						}
+						10 = {
+							create_faction = FACTION_NAME_DEMOCRATIC_5
+						}
+					}
+				}
+			}
+			FROM = {
+				country_event = { id = actual_diplomacy.5 hours = 2 }
+			}
+		}
+
+	}
+
+}
+
+pan_socialist_decisions = {
+	
+	seek_defensive_pact_FROM = {
+
+		icon = generic_political_discourse
+
+		cost = 25
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = less_than_4_defensive_pacts
+				check_variable = { defensive_pact_var < 4 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 0
+			}
+			modifier = {
+				FROM = {
+					NOT = {
+						has_government = ROOT
+					}
+				}
+				factor = 0
+			}
+		}
+
+		days_re_enable = 70
+
+		target_trigger = {
+			FROM = {
+				NOT = {
+					OR = {
+						is_guaranteed_by = ROOT
+						has_guaranteed = ROOT
+						tag = ZZZ
+						tag = RUS
+						tag = CHI
+						is_subject = yes
+						is_faction_leader = yes
+						has_war_with = ROOT
+						AND = {
+							is_in_faction = yes
+							NOT = { is_in_faction_with = ROOT }
+						}
+						has_war = yes
+						has_civil_war = yes
+					}
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			give_guarantee = FROM
+			FROM = {
+				country_event = { id = actual_diplomacy.2 hours = 2 }
+			}
+		}
+
+	}
+
+	further_integrate_alliance_with_FROM = {
+
+		icon = generic_political_discourse
+
+		cost = 75
+
+		days_re_enable = 70
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 0
+			}
+			modifier = {
+				FROM = {
+					NOT = {
+						has_government = ROOT
+					}
+				}
+				factor = 0
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				is_guaranteed_by = ROOT
+				has_guaranteed = ROOT
+				NOT = {
+					OR = {
+						tag = ZZZ
+						tag = RUS
+						tag = CHI
+						is_subject = yes
+						is_faction_leader = yes
+						AND = {
+							is_in_faction = yes
+							NOT = { is_in_faction_with = ROOT }
+						}
+						has_war = yes
+						has_civil_war = yes
+					}
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				country_event = { id = Puppet_Event.3 hours = 2 }
+			}
+		}
+
+	}
+
+	integrate_with_FROM = {
+
+		icon = generic_political_discourse
+
+		cost = 75
+
+		days_re_enable = 70
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 0
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				NOT = {
+					OR = {
+						tag = ZZZ
+						tag = RUS
+						tag = CHI
+					}
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				country_event = { id = Puppet_Event.6 hours = 2 }
+			}
+		}
+
+	}
+
 }

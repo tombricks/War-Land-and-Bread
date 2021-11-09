@@ -1302,18 +1302,18 @@
  VIN: "Vietnam"
  VIN_ADJ: "Vietnamese"
  VIN_DEF: "Vietnam"
- VIN_Hypersocialism: "Socialist Republic of Burma"
+ VIN_Hypersocialism: "Socialist Republic of Vietnam"
  VIN_Hypersocialism_ADJ: "Vietnamese"
- VIN_Hypersocialism_DEF: "The Socialist Republic of Burma"
- VIN_Marxism_Leninism: "Socialist Republic of Burma"
+ VIN_Hypersocialism_DEF: "The Socialist Republic of Vietnam"
+ VIN_Marxism_Leninism: "Socialist Republic of Vietnam"
  VIN_Marxism_Leninism_ADJ: "Vietnamese"
- VIN_Marxism_Leninism_DEF: "The Socialist Republic of Burma"
- VIN_New_Marxism: "Socialist Republic of Burma"
+ VIN_Marxism_Leninism_DEF: "The Socialist Republic of Vietnam"
+ VIN_New_Marxism: "Socialist Republic of Vietnam"
  VIN_New_Marxism_ADJ: "Vietnamese"
- VIN_New_Marxism_DEF: "The Socialist Republic of Burma"
- VIN_Reformist_Socialism: "Socialist Republic of Burma"
+ VIN_New_Marxism_DEF: "The Socialist Republic of Vietnam"
+ VIN_Reformist_Socialism: "Socialist Republic of Vietnam"
  VIN_Reformist_Socialism_ADJ: "Vietnamese"
- VIN_Reformist_Socialism_DEF: "The Socialist Republic of Burma" 
+ VIN_Reformist_Socialism_DEF: "The Socialist Republic of Vietnam" 
 
  CAM: "Cambodia"
  CAM_ADJ: "Cambodian"
@@ -1363,6 +1363,14 @@
  THA_Reformist_Socialism_ADJ: "Thai"
  THA_Reformist_Socialism_DEF: "The Republic of Socialist Thailand" 
 
+ EAF: "East African Federation"
+ EAF_ADJ: "East African"
+ EAF_DEF: "the East African Federation"
+ EAF_New_Marxism: "East African People's Republic"
+ EAF_New_Marxism_DEF: "the East African People's Republic"
+ EAF_Reformist_Socialism: "People's Republic of East Africa"
+ EAF_Reformist_Socialism_DEF: "the People's Republic of East Africa" 
+
  SAR: "Saarland"
  SAR_ADJ: "Saar"
  SAR_DEF: "Saarland"
@@ -1378,3 +1386,115 @@
  SAR_Reformist_Socialism: "Saar Soviet Territory"
  SAR_Reformist_Socialism_ADJ: "Saar"
  SAR_Reformist_Socialism_DEF: "The Saar Soviet Territory" 
+
+ MEX: "Mexican Democratic Republic"
+ MEX_ADJ: "Mexican"
+ MEX_DEF: "the Mexican Democratic Republic"
+
+ ZAT: "Zapatista Army of National Liberation"
+ ZAT_ADJ: "Zapatista"
+ ZAT_DEF: "the Zapatista Army of National Liberation"
+
+ RCG:0 "People's Republic of the Congo"
+ RCG_DEF:0 "the People's Republic of the Congo"
+ RCG_ADJ:0 "Congolese"
+
+ CAR:0 "Central African People's Republic"
+ CAR_DEF:0 "the Central African People's Republic"
+ CAR_Reactionism:0 "Central African Empire"
+ CAR_Reactionism_DEF:0 "the Central African Empire"
+ CAR_ADJ:0 "Central African"
+
+ PRU:0 "People's Peruvian Republic"
+ PRU_DEF:0 "the People's Peruvian Republic"
+ PRU_ADJ:0 "Peruvian"
+ PRU_New_Marxism:0 "Shining Path of Peru"
+ PRU_New_Marxism_DEF:0 "the Shining Path of Peru"
+
+ PBC:0 "Peru-Bolivian People's Union"
+ PBC_DEF:0 "the Peru-Bolivian People's Union"
+ PBC_ADJ:0 "Peru-Bolivian"
+ PBC_New_Marxism:0 "People's Republic of Peru and Bolivia"
+ PBC_New_Marxism_DEF:0 "the People's Republic of Peru and Bolivia"
+ PBC_Hypersocialism:0 "Andean Communal State"
+ PBC_Hypersocialism_DEF:0 "the Andean Communal State"
+
+ CSA:0 "Knighthood of the Socialist Confederacy"
+ CSA_DEF:0 "the Knighthood of the Socialist Confederacy"
+ CSA_ADJ:0 "Confederate"
+ CSA_Reactionism:0 "Confederate States of America"
+ CSA_Reactionism_DEF:0 "the Confederate States of America"
+ CSA_Marxism_Leninism:0 "Confederate Union of Socialist States of America"
+ CSA_Marxism_Leninism_DEF:0 "the Confederate Union of Socialist States of America"
+
+ CBN:0 "Caribbean People's Federation"
+ CBN_DEF:0 "the Caribbean People's Federation"
+ CBN_DEF:0 "Caribbean"
+
+ AST:0 "People's Commonwealth of Australasia"
+ AST_DEF:0 "the People's Commonwealth of Australasia"
+ AST_ADJ:0 "Australasian"
+
+ CTA:0 "People's Republic of Central America"
+ CTA_DEF:0 "the People's Republic of Central America"
+ CTA_ADJ:0 "Central American"
+
+ BOR:0 "Democratic State of Borneo"
+ BOR_DEF:0 "the Democratic State of Borneo"
+ BOR_ADJ:0 "Borneo"
+
+ INO:0 "Indonesian Democratic Union"
+ INO_DEF:0 "the Indonesian Democratic Union"
+ INO_ADJ:0 "Indonesian"
+
+ PHI:0 "Republic of the Philippines"
+ PHI_DEF:0 "the Republic of the Philippines"
+ PHI_ADJ:0 "Filipino"
+
+ VEN:0 "Bolivarian Republic of Venezuela"
+ VEN_DEF:0 "the Bolivarian Republic of Venezuela"
+ VEN_ADJ:0 "Venezuelan"
+
+ COL:0 "United Communes of Colombia"
+ COL_DEF:0 "the United Communes of Colombia"
+ COL_ADJ:0 "Colombian"
+
+ SAF:0 "Federation of South African Nations"
+ SAF_DEF:0 "the Federation of South African Nations"
+ SAF_ADJ:0 "South African"
+
+ RHO:0 "Revolutionary Republic of Rhodesia"
+ RHO_DEF:0 "the Revolutionary Republic of Rhodesia"
+ RHO:0 "Rhodesian"
+
+ JPN:0 "People's Republic of Japan"
+ JPN_DEF:0 "the People's Republic of Japan"
+ JPN_ADJ:0 "Japanese"
+
+ HOK:0 "Democratic Hokkaido Republic"
+ HOK_DEF:0 "the Democratic Hokkaido Republic"
+ HOK_ADJ:0 "Hokkaido"
+
+ ARG:0 "Confederate Socialist Republics of South America"
+ ARG_DEF:0 "the Confederate Socialist Republics of South America"
+ ARG_ADJ:0 "South American"
+
+ BRA:0 "People's Republic of Brazil"
+ BRA_DEF:0 "the People's Republic of Brazil"
+ BRA_ADJ:0 "Brazilian"
+
+ RGS:0 "Riograndese Commune"
+ RGS_DEF:0 "the Riograndese Commune"
+ RGS_ADJ:0 "Riograndese"
+
+ WAF:0 "Union of the Gold Coast"
+ WAF_DEF:0 "the Union of the Gold Coast"
+ WAF_ADJ:0 "Gold Coast"
+
+ MLI:0 "Mali Federation"
+ MLI_ADJ:0 "Mali"
+ MLI_DEF:0 "the Mali Federation"
+
+ MOR:0 "Moroccan People's Republic"
+ MOR_DEF:0 "the Moroccan People's Republic"
+ MOR_ADJ:0 "Moroccan"

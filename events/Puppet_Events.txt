@@ -49,3 +49,251 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = Puppet_Event.2 #RUS/CHI Demanding submission
+	title = Puppet_Event.2.TITLE
+	desc = Puppet_Event.2.DESC
+	picture = GFX_Country_Soviet_Army
+	is_triggered_only = yes
+	
+	option = { #yes papa
+		name = Puppet_Event.2.A
+		FROM = {
+			puppet = ROOT
+		}
+	}
+	
+	option = {
+		name = Puppet_Event.2.B # No papa
+		leave_faction = yes
+		FROM = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Puppet_Event.3 #FROM requests further integration of our alliance
+	title = Puppet_Event.3.TITLE
+	desc = Puppet_Event.3.DESC
+	is_triggered_only = yes
+	
+	option = { #yeah bro new alliance of communes
+		name = Puppet_Event.3.A
+		ai_chance = {
+			factor = 3
+		}
+		FROM = {
+			puppet = ROOT
+			country_event = { id = Puppet_Event.5 hours = 2 }
+		}
+	}
+	
+	option = {
+		name = Puppet_Event.3.B # Nah bro
+		ai_chance = {
+			factor = 1
+		}
+		FROM = {
+			country_event = { id = Puppet_Event.4 hours = 2 }
+		}
+	}
+}
+
+country_event = {
+	id = Puppet_Event.4 #FROM rejects integration
+	title = Puppet_Event.4.TITLE
+	desc = Puppet_Event.4.DESC
+	is_triggered_only = yes
+	
+	option = { #dassad!
+		name = Puppet_Event.4.A
+	}
+}
+country_event = {
+	id = Puppet_Event.5 #FROM accepts integration
+	title = Puppet_Event.5.TITLE
+	desc = Puppet_Event.5.DESC
+	is_triggered_only = yes
+	
+	option = { #dassad!
+		name = Puppet_Event.5.A
+	}
+}
+
+country_event = {
+	id = Puppet_Event.6 #FROM requests our annexation
+	title = Puppet_Event.6.TITLE
+	desc = Puppet_Event.6.DESC
+	is_triggered_only = yes
+	
+	option = { #For the Worker's Movement!
+		name = Puppet_Event.6.A
+		ai_chance = {
+			factor = 2
+		}
+		add_to_variable = { defensive_pact_var = -1 }
+		FROM = {
+			country_event = { id = Puppet_Event.7 hours = 2 }
+		}
+	}
+	
+	option = {
+		name = Puppet_Event.6.B # Nah bro
+		ai_chance = {
+			factor = 1 
+		}
+		FROM = {
+			country_event = { id = Puppet_Event.4 hours = 2 }
+		}
+	}
+
+	option = {
+		name = Puppet_Event.6.C # This is way too far bro, I'mma head out
+		ai_chance = {
+			factor = 1 
+		}
+		if = {
+			limit = { has_guaranteed = FROM }
+			diplomatic_relation = {
+				country = FROM
+				relation = guarantee
+				active = no
+			}
+		}
+		add_to_variable = { defensive_pact_var = -1 }
+		if = {
+			limit = { FROM = { is_faction_leader = yes } is_in_faction_with = FROM }
+			leave_faction = yes
+		}
+		FROM = {
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_free
+			}
+			if = {
+				limit = { has_guaranteed = ROOT }
+				diplomatic_relation = {
+					country = ROOT
+					relation = guarantee
+					active = no
+				}
+			}
+			country_event = { id = Puppet_Event.8 hours = 2 }
+		}
+	}
+}
+
+country_event = {
+	id = Puppet_Event.7 #FROM accepts annexation
+	title = Puppet_Event.7.TITLE
+	desc = Puppet_Event.7.DESC
+	is_triggered_only = yes
+	
+	option = { #For the Worker's Movement!
+		name = Puppet_Event.7.A
+		set_union_cosmetic_tag = yes
+		add_to_variable = { defensive_pact_var = -1 }
+		annex_country = {
+			target = FROM
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = { is_core_of = FROM }
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = { is_claimed_by = FROM }
+			add_claim_by = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = Puppet_Event.8 #FROM rigidly rejects our offer of union and cuts diplomatic ties
+	title = Puppet_Event.8.TITLE
+	desc = Puppet_Event.8.DESC
+	is_triggered_only = yes
+	
+	option = { #Then we will unite by force
+		name = Puppet_Event.8.A
+		add_to_variable = { defensive_pact_var = -1 }
+		every_state = {
+			limit = { is_core_of = FROM }
+			add_claim_by = ROOT
+		}
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+		AI_War_against_FROM = yes
+	}
+	
+	option = {
+		name = Puppet_Event.8.B # If that is what they wish...
+		add_to_variable = { defensive_pact_var = -1 }	
+	}
+}
+
+country_event = {
+	id = Puppet_Event.9 #FROM tries to ensure political correctness in our nation
+	title = Puppet_Event.9.TITLE
+	desc = Puppet_Event.9.DESC
+	is_triggered_only = yes
+	
+	option = { #It is good of them to make sure we are correctly following Marx's teachings
+		name = Puppet_Event.9.A
+		ai_chance = {
+			factor = 1
+		}
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.02
+		}
+	}
+	
+	option = {
+		name = Puppet_Event.9.B # They are being excessively paranoid.
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_country_flag = loyal_ally
+				factor = 0
+			}
+		}	
+		add_popularity = {
+			ideology = ROOT
+			popularity = -0.03
+		}
+	}
+}
+
+country_event = {
+	id = Puppet_Event.10 #Monthly faction leader thingy for pp *lenny face*
+	title = Puppet_Event.10.TITLE
+	desc = Puppet_Event.10.DESC
+	is_triggered_only = yes
+	
+	option = { #Im glad they are helping our administratio
+		name = Puppet_Event.10.A
+		ai_chance = {
+			factor = 1
+		}
+		set_temp_variable = { puppetmaster_pp_gain = num_subjects }
+		if = {
+			limit = { NOT = { tag = RUS } }
+			multiply_temp_variable = { puppetmaster_pp_gain = 2 }
+		}
+		add_to_temp_variable = { puppetmaster_pp_gain = num_faction_members }
+		if = {
+			limit = { NOT = { tag = RUS } }
+			multiply_temp_variable = { puppetmaster_pp_gain = 2 }
+		}
+		add_political_power = puppetmaster_pp_gain
+		clr_country_flag = puppet_pp_gained
+	}
+}

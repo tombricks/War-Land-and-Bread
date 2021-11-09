@@ -1,0 +1,24 @@
+add_namespace = china
+
+country_event = { #Philippines doesn't control Taiwan anymore, give up the union?
+	id = china.1
+	title = china.1.t
+	desc = china.1.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PHI
+		NOT = { owns_state = 524 }
+	}
+
+	option = { #never!
+		name = china.1.a
+		add_war_support = 0.05
+	}
+	option = { #fine
+		name = china.1.b
+		remove_state_core = 524
+		CHI = { add_state_core = 524 }
+	}
+}
